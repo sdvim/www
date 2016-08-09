@@ -1,0 +1,67 @@
+---
+layout: default
+title: About
+permalink: /about/
+nav: true
+footer: true
+---
+
+<section class="columns">
+
+  <div class="two-thirds">
+
+    <h1 class="title">About me</h1>
+
+    <p class="lead">Born and raised in Miami, I've always liked making and breaking things like this long sentence.</p>
+
+    <p>I collected Pokémon cards, something something Neopets. A a per sed condimentum urna parturient adipiscing adipiscing suspendisse parturient consequat tristique mus scelerisque vehicula justo eros arcu commodo posuere ac. Nascetur vestibulum sociosqu nascetur feugiat elementum a laoreet nec vestibulum varius pretium a a vestibulum a ac tellus a ultricies. Orci arcu mi ullamcorper sed parturient montes adipiscing a nec dignissim non condimentum hac feugiat aliquam elementum commodo venenatis scelerisque a at adipiscing sit facilisis ante a mauris aenean.</p>
+
+    <p>Lacinia sem a habitant quam consectetur semper fusce vehicula et a vestibulum sociis gravida congue pretium vestibulum scelerisque tempor parturient molestie mi a ad.</p>
+
+    <!-- <h2>Pulse</h2> -->
+
+    <!-- <h3>Unread counts</h3>
+    <ul>
+      <li>Gmail inbox
+      <li>Goodreads want to read list
+      <li>Pocket inbox
+      <li>Habitica unfinished dailies
+    </ul> -->
+
+    <!-- <h3>Grid of 8 most recent Instagram and LastFM posts</h3> -->
+
+  </div>
+  <div class="third center">
+      <!-- <div class="avatar">
+        <img src="/images/avatar/7.png">
+        <img src="/images/avatar/6.png">
+        <img src="/images/avatar/5.png">
+        <img src="/images/avatar/4.png">
+        <img src="/images/avatar/3.png">
+        <img src="/images/avatar/2.png">
+        <img src="/images/avatar/1.png">
+      </div> -->
+      <img class="avatar" src="//www.gravatar.com/avatar/4166bcf9dafd384df666d7e346f97a1d?s=264">
+    <!--
+    <p class="speech">
+      Hey this is me talking here! What if I told you I had text-to-speech set up on this, would you think that was cool?
+    </p>
+    <div class="speech responses">
+      <button class="btn alternate">&check;</button>
+      <button class="btn">&cross;</button>
+      <button class="btn">&cross;</button>
+    </div>
+  -->
+  </div>
+
+  <h2 class="full">What I've been up to:</h2>
+
+  {% for gram in site.data.instagrams reversed %}
+  <div class="quarter">
+    <a href="//www.instagram.com/p/{{ gram.url }}">
+      <img class="instagram-photo" alt="{{ gram.caption }}" src="//instagram.fsnc1-1.fna.fbcdn.net/t51.2885-15/s320x320/sh0.08/e35/{{ gram.img }}">
+    </a>
+  </div>
+  {% endfor %}
+
+</section>

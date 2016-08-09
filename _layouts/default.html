@@ -1,0 +1,127 @@
+{% assign header_links = site.pages | where: "nav", true %}
+{% assign footer_links = site.pages | where: "footer", true %}
+{% assign colophon_links = site.pages | where: "colophon", true %}
+{% assign footer_contacts = site.data.contact | where: "footer", true | sort: "title" %}
+{% assign url = page.url | remove:'index.html' %}
+{% if url == "/" %}
+  {% assign home = true %}
+{% else %}
+  {% assign home = false %}
+{% endif %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3d465c">
+    <meta name="theme-color" content="#3d465c">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Steve Della-Valentina</title>
+    <link rel="author" href="//plus.google.com/+SteveDellaValentina">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml" title="{{ site.title }}">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titillium+Web:300,300italic,600|Montserrat:400">
+    <link rel="stylesheet" href="/assets/main.css">
+    {% if page.stylesheet %}<link rel="stylesheet" href="/assets/{{ page.stylesheet }}.css">{% endif %}
+    {% if jekyll.environment == "production" %}
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-75003409-Y', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+    {% endif %}
+  </head>
+  <body class="grid" id="xray">
+
+  <header class="header">
+    <nav class="header-nav wrapper">
+      <a class="logocube" href="/">
+        <div class="logocube-3D animate-{% if home %}spin{% else %}ready{% endif %}">
+          <svg class="logocube-face icon-S top" viewBox="0 0 100 100"><path d="M100 20H40v20h60v60H0V80h60V60H0V0h100"/></svg>
+          <svg class="logocube-face icon-D back" viewBox="0 0 100 100"><path d="M0 0v100h100V0H0zm80 60H60v20H40V20h20v20h20v20z"/></svg>
+          <svg class="logocube-face icon-D front" viewBox="0 0 100 100"><path d="M0 0v100h100V0H0zm80 60H60v20H40V20h20v20h20v20z"/></svg>
+          <svg class="logocube-face icon-V right" viewBox="0 0 100 100"><path d="M80 0v60H60V0H0v100h100V0H80z"/></svg>
+          <svg class="logocube-face icon-V left" viewBox="0 0 100 100"><path d="M80 0v60H60V0H0v100h100V0H80z"/></svg>
+          <svg class="logocube-face home bottom" viewBox="0 0 100 140">
+            <path d="M80 40V20H60V0H40v20H20v20H0v100h20V80h20v60h60V40H80zm0 60H60V80h20v20z"/>
+          </svg>
+        </div>
+          {% if home %}
+          <div class="logocube-text animated fullname">
+            <span>Steve</span>
+            <span>Della</span>
+            <span>Valentina</span>
+          </div>
+          {% else %}
+          <div class="logocube-text home">
+            <span>Home</span>
+          </div>
+          {% endif %}
+      </a>
+
+    {% for link in header_links %}
+      <a class="header-link {% if page.url contains link.url %}active{% endif %}" href="{{ link.url }}">{{ link.title }}
+      </a>
+    {% endfor %}
+    </nav>
+  </header>
+
+  <main class="wrapper {% if page.wrapper %}{{ page.wrapper }}{% endif %}">
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <nav class="wrapper" id="settings">
+      <section class="columns">
+        <div class="half">
+          <h5 class="footer-heading">STATUS</h5>
+          <p class="lead">You're in luck. I'm currently taking on projects!</p>
+          <a class="btn shiny filled accent-on-hover" href="/hire/">Hire me</a>
+          <a class="btn filled xray" href="#">No.</a>
+        </div>
+        <div class="half columns">
+          <div class="third">
+            <h5 class="footer-heading">CONNECT</h5>
+            {% for contact in footer_contacts %}
+              {% if contact.username %} {% assign username = contact.username %}
+              {% else %} {% assign username = site.username %}
+              {% endif %}
+              <a class="footer-link" href="{{ contact.url }}{{ username }}">{{ contact.title }}</a>
+            {% endfor %}
+          </div>
+          <div class="third">
+            <h5 class="footer-heading">NAVIGATE</h5>
+            {% for link in footer_links %}
+              <a class="footer-link" href="{{ link.url }}">{{ link.title }}
+              </a>
+            {% endfor %}
+            </ul>
+          </div>
+          <div class="third">
+            <h5 class="footer-heading">COLOPHON</h5>
+            {% for link in colophon_links %}
+              <a class="footer-link" href="{{ link.url }}">{{ link.title }}
+              </a>
+            {% endfor %}
+            <br>
+            <a href="#xray">
+              {% include icon.html use="cog" class="footer-link footer-icon" %}
+            </a>
+            <a href="#!">
+              {% include icon.html use="cog" class="footer-link footer-icon" %}
+            </a>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </nav>
+  </footer>
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+  <!-- <script type="text/javascript" src="//rawgithub.com/browserstate/ajaxify/master/ajaxify-bookmarklet-helper.js"></script> -->
+  <script type="text/javascript" src="/assets/main.js"></script>
+
+  </body>
+</html>

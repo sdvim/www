@@ -1,0 +1,27 @@
+#xray:target {
+  @extend .grid.line;
+  main {
+    background: none;
+    box-shadow: none;
+  }
+  .footer {
+    @extend .grid.line;
+  }
+  .xray {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+  }
+  // * {
+  *:not(.columns):not(.wrapper) {
+    outline: 1px solid palette(accent, tint);
+  }
+}
+
+.xray {
+  @include transition;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0);
+  transition-property: all !important;
+}

@@ -1,0 +1,42 @@
+.speech {
+  @include font-size(small);
+  $box-shadow-color: palette(background, shade);
+  $caret-size: $base-unit * 1.5;
+  $caret-offset: -15px;
+  background: palette(background);
+  box-shadow: $box-shadow-color 0 0 0 1px inset, $box-shadow-color 0 0 0 1px;
+  color: palette(foreground, shade);
+  font-family: $code-font-stack;
+  padding: $base-unit;
+  position: relative;
+  // margin-top: $line-height * 2;
+  text-align: left;
+  &::after {
+    @extend %absolute-centered;
+    background: inherit;
+    box-shadow: $box-shadow-color -2px -2px;
+    bottom: auto;
+    content: '';
+    height: $caret-size;
+    top: $caret-offset;
+    transform: rotate(45deg);
+    width: $caret-size;
+  }
+  &.responses {
+    display: inline-block;
+    .btn {
+      float: left;
+      padding: 0;
+      width: $base-unit * 2;
+      margin-right: $base-unit;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &::after {
+      bottom: $caret-offset;
+      top: auto;
+      transform: rotate(225deg);
+    }
+  }
+}

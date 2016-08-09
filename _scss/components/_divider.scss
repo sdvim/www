@@ -1,0 +1,35 @@
+.divider {
+  @include font-size(small);
+  color: palette(primary, tint);
+  font-weight: bold;
+  height: $line-height * 2;
+  line-height: $line-height * 2;
+  margin-bottom: $line-height;
+  margin-top: $line-height;
+  position: relative;
+  text-align: center;
+
+  &.left {
+    text-align: left;
+
+    &::before {
+      background: linear-gradient(to right, transparent 14%, currentColor 18%);
+    }
+  }
+
+  &.title {
+    margin-top: 0;
+  }
+
+  &.inverted {
+    background-color: palette(primary);
+    color: palette(background, tint);
+  }
+
+  &::before {
+    @extend %absolute-centered;
+    background: linear-gradient(to right, currentColor 36%, transparent 40%, transparent 60%, currentColor 64%);
+    content: '';
+    height: 2px;
+  }
+}

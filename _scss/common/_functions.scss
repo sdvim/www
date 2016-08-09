@@ -1,0 +1,34 @@
+@function palette($color, $mix: '') {
+  @if map-has-key($palettes, $color) {
+    $color: map-get($colors, map-get($palettes, $color));
+  }
+  @elseif map-has-key($colors, $color) {
+    $color: map-get($colors, $color);
+  }
+  @else {
+    @return false;
+  }
+
+  @if $mix == '' {
+    @return $color;
+  }
+
+  @elseif $mix == 'tint' {
+    @return lighten($color, $palette-strength);
+  }
+
+  @elseif $mix == 'tone' {
+    // @return desaturate($color, $palette-strength);
+    @return $color;
+  }
+
+  @elseif $mix == 'shade' {
+    @return darken($color, $palette-strength);
+  }
+}
+@function fontsize($size) {
+  @return map-get($font-sizes, $size);
+}
+@function hsl-string($color) {
+  @return'hsl(' + str-slice(#{hue($color)}, 0, 3) + ', ' + saturation($color) + ', ' + lightness($color) + ')';
+}

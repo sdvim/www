@@ -1,0 +1,66 @@
+---
+layout: default
+title: Home
+permalink: /
+footer: true
+---
+
+<section class="columns">
+
+  <!-- Profile -->
+  <div class="columns two-thirds">
+    <h1 class="full title">Hey there, <span class="typewriter name animated">I'm Steve</span>!</h1>
+    <p class="full lead">Developer &amp; Designer in Oakland, California.</p>
+    <p class="full">When I'm not making something for the web, you can bet I'm playing some games of competitive Smash Bros. Although my complete website is still being developed, I hope you enjoy this selection of my highlighted work.</p>
+    <!-- <p class="full">I’m a generalist with an abiding love for the Web.
+I enjoy figuring things out and blazing new trails in the areas of responsive design, performance, web standards, accessibility and emerging browser APIs.</p> -->
+    <a class="third btn filled accent" href="/hire/">Let's work!</a>
+    <a class="third btn filled" href="/about/">Go on...</a>
+    <!-- This secret wasn't meant to be found like this! -->
+    <a class="third btn filled xray shiny" href="/secret/">...to a secret page?</a>
+  </div>
+  <div class="third">
+    <img class="avatar" src="/assets/avatar.png">
+  </div>
+
+  <!-- Featured work -->
+  {% assign project = site.works | where: "size", "full" | first %}
+  <div class="full divider">FEATURED WORK</div>
+  <!-- <hr class="full"> -->
+
+  <figure class="full figure">
+    <img class="figure-image" src="/cdn/{{ project.slug}}/hero.{{ project.thumb.ext }}">
+  </figure>
+
+  <h2 class="full title">{{ project.title }} <small>{{ project.categories | first | upcase }}</small></h2>
+
+  <p class="two-thirds">{{ project.summary }}</p>
+
+  <div class="third columns">
+    <a class="btn half accent" href="{{ project.url }}">Featured work</a>
+    <a class="btn half" href="/work/">See all works</a>
+  </div>
+
+  <!-- Latest posts -->
+  <div class="half">
+    <div class="title divider left">POSTS</div>
+    {% for post in site.posts | limit: 3 %}
+    <article>
+      <div>
+        <span class="tag">{{ post.categories[0] | upcase }}</span>
+      </div>
+      <h3 class="title" style="clear: left;"><a class="link visitable" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      <!-- {{ post.excerpt }} -->
+    </article>
+    {% endfor %}
+    <a class="btn centered" href="/blog/">Read more posts</a>
+  </div>
+
+  <!-- Latest updates -->
+  <div class="half">
+    <div class="title divider left">LOG</div>
+
+    <a class="btn centered" href="/log/">See change log</a>
+  </div>
+
+</section>

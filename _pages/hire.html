@@ -1,0 +1,23 @@
+---
+layout: page
+title: Hire
+<!-- description: Giv me monies pls!1 -->
+permalink: /hire/
+parent: About
+---
+
+<section class="columns">
+  <h3 class="full">Availability</h3>
+{% assign months = "MAR|APR|MAY|JUN|JUL|AUG" | split: "|" %}
+{% for mon in months %}
+  {% if forloop.index == 1 or forloop.index == 4 %}
+    <article class="columns half">
+  {% endif %}
+  <div class="third availability">
+    <span class="availability-text">{{ mon }}</span>
+  </div>
+  {% if forloop.index == 3 or forloop.index == 6 %}
+    </article>
+  {% endif %}
+{% endfor %}
+</section>

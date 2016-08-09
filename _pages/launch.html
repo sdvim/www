@@ -1,0 +1,41 @@
+---
+layout: default
+title: Home
+permalink: /launch/
+footer: false
+---
+
+<section class="columns">
+
+  <!-- Profile -->
+  <div class="columns two-thirds center-phone">
+    <h1 class="full title">Hey there, <span class="typewriter name animated">I'm Steve</span>!</h1>
+    <p class="full lead">Developer &amp; Designer in Oakland, CA.</p>
+    <p class="full">When I'm not making something for the web, you can bet I'm playing some games of competitive Smash Bros. Although my complete website is still being developed, I hope you enjoy this selection of my highlighted work.</p>
+  </div>
+  <div class="third hacky">
+    <img class="avatar" src="/assets/avatar.png" style="margin-left: auto; width: 12rem; height: 12rem;">
+  </div>
+
+  <!-- Featured work -->
+  {% assign works = site.works | where: "highlight",true | reverse %}
+  {% for work in works  %}
+  <hr class="full">
+
+  <figure class="full figure">
+    <img class="figure-image" src="/cdn/{{ work.slug}}/hero.{{ work.thumb.ext }}">
+  </figure>
+
+  <h2 class="full title">{{ work.title }} <small>{{ work.categories | first | upcase }}</small></h2>
+  <p class="two-thirds">{{ work.summary }}</p>
+  {% if work.live %}
+    <a class="btn third" href="{{ work.live }}">{{ work.live | remove: 'http://' }}</a>
+  {% endif %}
+  {% endfor %}
+
+  <!-- Latest updates -->
+  <hr class="full">
+  <h2 class="full center">Wanna make something great together?</h2>
+  <a class="half btn filled accent large" href="mailto:holla@stevedv.com">holla@stevedv.com</a>
+
+</section>

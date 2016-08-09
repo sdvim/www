@@ -1,0 +1,15 @@
+.contact {
+  margin-bottom: $line-height * 2;
+  &.highlighted {
+    color: palette(foreground, shade);
+    font-weight: 600;
+    order: -1;
+  }
+  // questionable usage of nth child
+  &:nth-last-child(-n+3) {
+    margin-bottom: $line-height;
+  }
+  &-text {
+    margin-bottom: 0;
+  }
+}

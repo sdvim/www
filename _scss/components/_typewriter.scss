@@ -1,0 +1,50 @@
+.typewriter {
+  display: inline-flex;
+  overflow: hidden;
+  white-space: nowrap;
+  &.name.animated {
+    animation:
+      erase-text .6s 4s steps(5, start) forwards,
+      erase-text 1s 5s steps(5, end) reverse forwards,
+      erase-text .5s 7.5s steps(1, start) forwards,
+      set-width-im-steve 1s 8s steps(8, start) forwards;
+    width: 4.4ch;
+    &::before {
+      animation:
+        // blink-cursor 1s 4s alternate-reverse 4,
+        set-content-imsdv 0s 5s forwards,
+        highlight-text 1s 7s steps(1, start),
+        erase-text 0s 8s forwards;
+      color: palette(foreground);
+      content: 'sdvim';
+      display: inline-block;
+      // padding-right: 4px;
+      // border-right: 2px solid transparent;
+    }
+  }
+}
+
+@keyframes blink-cursor {
+  to { border-color: currentColor; }
+}
+
+@keyframes highlight-text {
+  to { background: transparentize(palette(primary), .7) }
+}
+
+@keyframes erase-text {
+  to { width: 0; overflow: hidden; }
+}
+
+@keyframes set-width-im-steve {
+  from { width: 0; }
+  to { width: 6.7ch; }
+}
+
+@keyframes set-content-imsdv {
+  to { content: 'imsdv'; }
+}
+
+@keyframes set-content-im-steve {
+  to { content: 'I\'m Steve'; }
+}

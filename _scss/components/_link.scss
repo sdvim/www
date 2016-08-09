@@ -1,0 +1,53 @@
+.link {
+  @include transition(null);
+  box-shadow: 0 -2px 0 0 transparentize(palette(accent), .7) inset;
+  color: palette(accent);
+  display: inline-block;
+  font-weight: bold;
+  position: relative;
+  transition-property: box-shadow, color;
+
+  &::before {
+    @extend %absolute-centered;
+    background: linear-gradient(to left, palette(accent), transparentize(palette(accent), .3) 20%, transparentize(palette(accent), .3) 80%, palette(accent));
+    box-sizing: content-box;
+    content: '';
+    opacity: .1;
+    transform: skewX(-8deg) scaleX(0);
+    transform-origin: right;
+    transition: inherit;
+    transition-property: opacity, transform;
+  }
+
+  &:hover {
+    color: palette(accent, shade);
+
+    &::before {
+      opacity: .3;
+      transform: skewX(-8deg) scaleX(1);
+      transform-origin: left;
+    }
+  }
+}
+
+.link--visitable {
+  &::after {
+    &:hover {
+      content: '\2299';
+      transform: none;
+    }
+
+    &:visited {
+      color: palette(background, tint);
+    }
+    @include transition(transform);
+    color: palette(primary, tint);
+    content: '\2296';
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    transform: scale(1.1, .4) translateY(.1em);
+    width: 1.5em;
+  }
+
+}

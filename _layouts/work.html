@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<h1 class="title">{{ page.title }} <small>{{ page.categories | first | upcase }}</small></h1>
+
+<div class="columns">
+
+  <figure class="full figure">
+  {% if page.thumb.src %}
+    <img class="figure-image" src="/cdn/{{ page.slug}}/hero.{{ page.thumb.ext }}">
+    {% if page.thumb.credit %}
+    <figcaption class="figure-credit">{{ page.thumb.credit }} <a href="{{ page.thumb.src }}">{{ page.thumb.author }}</a></figcaption>
+    {% endif %}
+  {% else %}
+    <img class="figure-image" src="//placehold.it/1260x720">
+  {% endif %}
+  </figure>
+
+  <div class="half">
+    <h5 class="title" style="margin-bottom: 0">SUMMARY</h5>
+    {{ page.summary }}
+  </div>
+
+  <section class="half columns">
+    <div class="two-thirds">
+      <h5 class="title" style="margin-bottom: 0">ROLE</h5>
+      <span>{{ page.role }} using</span><br>
+      <span>{{ page.tags | array_to_sentence_string | replace: "-"," " }}.</span>
+    </div>
+    <div class="third">
+      <h5 class="title" style="margin-bottom: 0">FINISHED</h5>
+      <span>{{ page.date | date:"%Y" }}.</span>
+    {% if page.original_date %}
+      <deL>{{ page.original_date }}</del>
+    {% endif %}
+    </div>
+  </section>
+
+  <div class="full">
+    {{ content }}
+  </div>
+
+  {% if page.live %}
+    <a class="half btn filled large accent" href="{{ page.live }}">{{ page.live | remove: 'http://' }}</a>
+  {% endif %}
+
+  <hr class="full">
+  {% if page.previous.url %}
+    <a class="third btn prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+  {% else %}
+    <div class="third"></div>
+  {% endif %}
+  <a class="third btn" href="/work/">Return to All Work</a>
+  {% if page.next.url %}
+    <a class="third btn next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+  {% else %}
+    <div class="third"></div>
+  {% endif %}
+</div>

@@ -1,0 +1,33 @@
+name: Steve Della-Valentina
+username: sdvim
+highlighter: rogue # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json", "README.md"]
+include: ["_pages"]
+
+# gems: ["jekyll-paginate"]
+# paginate: 10
+# paginate_path: /blog/page:num
+
+permalink: /blog/:title/
+
+collections:
+  works:
+    output: true
+    permalink: /work/:slug/
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      # excerpt_separator: <!--more-->
+      layout: post
+  - scope:
+      type: works
+    values:
+      layout: work
+      role: Developer & Designer
+      summary: I made something cool while not being a fool cleaning up drool.
+      tags: tag swag bag
+      size: third
+      thumb:
+        ext: png

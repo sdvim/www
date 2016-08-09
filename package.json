@@ -1,0 +1,45 @@
+{
+  "name": "sdv.im",
+  "version": "0.0.0",
+  "description": "Personal website of Steve Della-Valentina",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sdvim",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "*",
+    "browserify": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cssbeautify": "*",
+    "gulp-plumber": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-svg-sprite": "*",
+    "gulp-util": "*",
+    "ngrok": "*",
+    "vinyl-buffer": "*",
+    "vinyl-source-stream": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ],
+  "bugs": {
+    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
+  },
+  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
+  "dependencies": {
+    "browser-sync": "*",
+    "gulp-autoprefixer": "*",
+    "typewriter": "*"
+  }
+}
