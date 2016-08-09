@@ -1,4 +1,4 @@
-@mixin transition($property:all, $timing:300ms, $easing:cubic-bezier(.37, .2, .26, 1)) {
+@mixin transition($property: all, $timing: 300ms, $easing: cubic-bezier(.37, .2, .26, 1)) {
   transition: $property $timing $easing;
 }
 

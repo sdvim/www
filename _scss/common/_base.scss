@@ -179,34 +179,34 @@ input {
   }
 }
 
-blockquote {
-  color: palette(foreground, tint);
-  font-style: italic;
-  margin: $line-height $base-unit * 2;
-  position: relative;
-
-  &::after,
-  &::before {
-    @include font-size(huge);
-    position: absolute;
-  }
-
-  &::after {
-    bottom: 0;
-    content: '\201D';
-    right: -1em;
-  }
-
-  &::before {
-    content: '\201C';
-    left: -1em;
-    top: 0;
-  }
-
-  :last-child {
-    margin-bottom: 0;
-  }
-}
+// blockquote {
+//   color: palette(foreground, tint);
+//   font-style: italic;
+//   margin: $line-height $base-unit * 2;
+//   position: relative;
+//
+//   &::after,
+//   &::before {
+//     @include font-size(huge);
+//     position: absolute;
+//   }
+//
+//   &::after {
+//     bottom: 0;
+//     content: '\201D';
+//     right: -1em;
+//   }
+//
+//   &::before {
+//     content: '\201C';
+//     left: -1em;
+//     top: 0;
+//   }
+//
+//   :last-child {
+//     margin-bottom: 0;
+//   }
+// }
 
 ::-moz-selection {
   background: transparentize(palette(primary), .9);

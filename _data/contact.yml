@@ -12,7 +12,7 @@
 - title: Email
   url: "mailto:"
   username: holla@stevedv.com
-  # footer: true
+  footer: true
   class: general highlighted
   text: My preferred way to get in touch. I try to only check twice a day, typically around 10 AM/PM PST.
 

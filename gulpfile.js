@@ -57,7 +57,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 gulp.task('sass', function () {
   return gulp.src('_scss/*.scss')
     .pipe(plumber())
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass({ includePaths: ['scss'] }))
     .pipe(prefix({
       // browsers: ['last 2 versions', '> 1%', 'ie 8', 'ie 7'],
@@ -66,7 +66,7 @@ gulp.task('sass', function () {
     }))
     // .pipe(cssbeautify({ indent: '  ' }))
     .pipe(plumber.stop())
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
     .pipe(gulp.dest('_site/assets'))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(gulp.dest('assets'));
@@ -110,7 +110,7 @@ gulp.task('watch', function () {
     '_layouts/*.html',
     '_pages/*',
     '_posts/**/*.md',
-    '_works/**/*.md'
+    '_works/**/*.html'
   ], ['jekyll-rebuild']);
 });
 
