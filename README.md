@@ -1,23 +1,23 @@
 ## Todo
 
 ### Content (HTML)
-[] Works
-[] About
-[] Home
-[] Blog
-[] Hire
-[] Styleguide
-[] Credits
+- [ ] Works
+- [ ] About
+- [ ] Home
+- [ ] Blog
+- [ ] Hire
+- [ ] Styleguide
+- [ ] Credits
 
 ### Polish (CSS)
-[] Responsive design
-[] Cross-browser testing
+- [ ] Responsive design
+- [ ] Cross-browser testing
 
 ### Bonus features (JS)
-[] Home page visited
-[] Logo game
-[] Stats
+- [ ] Home page visited
+- [ ] Logo game
+- [ ] Stats
 
 ### Optimization
-[] Critical CSS
-[] History.js
+- [ ] Critical CSS
+- [ ] History.js
