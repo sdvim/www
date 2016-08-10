@@ -48,37 +48,44 @@ data:
   time: Feb 13, 2016 at 1:06pm PST
   class: third
 ---
-
-<br><br>
+<div class="divider skip-7 full">A CLOSER LOOK</div>
 
 <figure class="figure figure--lighten full">
-  <img class="figure-image" src="/cdn/nyfw/kiosks-measured.png">
-  <figcaption class="figure-credit">Front (selfie booth) &amp; Back (schedule)</figcaption>
+  <img class="figure-image" src="{{ site.cdn }}/nyfw/kiosks-measured.png">
 </figure>
 
+<div class="two-thirds">
+  <h3 class="marginless">Background updates</h3>
 
-### Problems
+  <p>Something is bound to go wrong when a developer is 3000 miles away from the production machines. At any given moment there was likely foot traffic, so this would have to be stealthy.</p>
+  <p>Instead, I wrote a simple script that checked for updates every minute, and would reload the changes once the machine is idle for two minutes.</p>
+  <p>This was done by storing the codebase on Dropbox, in which myself and the four production machines all had access to. I push changes, the kiosks download it, then compare the timestamps of the current code being used against the code in the local Dropbox folder, and reload the app if no one is around.</p>
+  <p>This proved invaluable as the touchscreens began to experience hardware issues, so adjustments to the on-screen keyboard had to be made, amongst other fixes.</p>
+</div>
 
-There
+<div class="third">
+  <h3 class="marginless">Smart schedule</h3>
 
-<div class="divider full">PHOTOS</div>
+  <p>The schedule app was made to be as direct as possible. It would select the current day's lineup upon both boot-up and after a user walks away.</p>
+  <p>Furthermore, past events would dim slightly to better stay up to date.</p>
+</div>
+
+<div class="divider skip-9 full">IN THE WILD</div>
 
 {% for instagram in page.data %}
   {% include instagram-embed.html use=instagram %}
 {% endfor %}
 
+<div class="grid-liner" style="height: calc(16.5rem - 4px);"></div>
+
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 
+<!--
+More posts
 https://twitter.com/KKelsen/status/698875759587414016
-
 https://twitter.com/KimberlyKline/status/697826154221281281
-
 https://twitter.com/Tiffy_Lacel/status/700054791695831041
-
 https://twitter.com/JoeTexOnline/status/699733756647776257
-
-
-### Meh
 https://www.instagram.com/p/BB1MPaxHLDK/
 https://www.instagram.com/p/BBvIOYayq9t/
 https://www.instagram.com/p/BBvJBTJSq_1/
@@ -89,3 +96,4 @@ https://www.instagram.com/p/BB0rfX0MiV5/
 https://www.instagram.com/p/BB_BZ5mvDDr/
 https://www.instagram.com/p/BB6fTrlnjmT/
 https://www.instagram.com/p/BB1DJMnGiw6/
+-->

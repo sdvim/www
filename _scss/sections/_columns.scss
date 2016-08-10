@@ -59,7 +59,7 @@ hr {
 
 .placeholder {
   @extend .grid.line;
-  box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset, 0 0 0 1px rgba(0,0,0,.1);
-  text-align: center;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .1) inset, 0 0 0 1px rgba(0, 0, 0, .1);
   line-height: $base-unit * 5;
+  text-align: center;
 }

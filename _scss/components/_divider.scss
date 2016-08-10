@@ -9,6 +9,14 @@
   position: relative;
   text-align: center;
 
+  &.skip-7 {
+    margin-top: $line-height * 7;
+  }
+
+  &.skip-9 {
+    margin-top: $line-height * 9;
+  }
+
   &.left {
     text-align: left;
 

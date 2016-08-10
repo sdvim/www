@@ -1,5 +1,5 @@
 <a class="work {{ include.use.size }} {{ include.use.categories[0] | replace: ' ','-' | replace:'-&-',' ' }} {{ include.class }}" href="{{ include.use.url | prepend: site.baseurl }}">
-  <img class="work-figure" src="/cdn/{{ include.use.slug }}/hero.{{ include.use.thumb.ext }}">
+  <img class="work-figure" src="{{ site.cdn }}/{{ include.use.slug }}/hero.{{ include.use.thumb.ext }}">
   <h3 class="work-title">{{ include.use.title }}</h3>
   <h5 class="work-category">{{ include.use.category }}</h5>
 </a>

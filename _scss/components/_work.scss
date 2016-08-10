@@ -1,15 +1,29 @@
 .work {
   background: palette(primary, shade);
   // border-radius: 4px;
-  position: relative;
   overflow: hidden;
+  position: relative;
 
-  &.full { height: $line-height * 20; }
-  &.half { height: $line-height * 9; }
-  &.third { height: $line-height * 6; }
-  &.third.extended,
-  &.two-thirds { height: $line-height * 13; }
-  &.child { width: 100%; }
+  &.full {
+    height: $line-height * 20;
+  }
+
+  &.half {
+    height: $line-height * 9;
+  }
+
+  &.third {
+    height: $line-height * 6;
+  }
+
+  &.third,
+  &.two-thirds {
+    height: $line-height * 13;
+  }
+
+  &.child {
+    width: 100%;
+  }
 
   &-figure {
     @extend %absolute-centered;
@@ -30,27 +44,33 @@
     @include transition(transform);
     height: $line-height;
     left: $base-unit;
-    position: absolute;
-    z-index: 2;
     margin: 0;
+    position: absolute;
+    text-shadow: palette(primary, shade) 0 0 10px;
+    z-index: 2;
   }
 
   &-category {
-    color: palette(background, shade);
     bottom: $line-height;
+    color: palette(background, shade);
     text-transform: uppercase;
   }
 
   &-title {
-    color: palette(background, tint);
     bottom: $line-height * 2;
+    color: palette(background, tint);
   }
 
   &:hover {
     .work {
       &-category,
-      &-title { transform: translateY($line-height * 3); }
-      &-figure { filter: none; }
+      &-title {
+        transform: translateY($line-height * 3);
+      }
+
+      &-figure {
+        filter: none;
+      }
     }
   }
 }

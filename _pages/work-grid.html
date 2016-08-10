@@ -1,0 +1,35 @@
+<!-- includes/work.html -->
+<a class="work {{ include.use.size }} {{ include.use.categories[0] | replace: ' ','-' | replace:'-&-',' ' }} {{ include.class }}" href="{{ include.use.url | prepend: site.baseurl }}">
+  <img class="work-figure" src="{{ site.cdn }}/{{ include.use.slug }}/hero.{{ include.use.thumb.ext }}">
+  <h3 class="work-title">{{ include.use.title }}</h3>
+  <h5 class="work-category">{{ include.use.category }}</h5>
+</a>
+
+
+  {% assign sizes = site.works | group_by: "size" | reverse %}
+  {% for size in sizes %}
+    {% assign projects = size.items | sort: "year" | reverse %}
+    {% for project in projects | limit: 6 %}
+      {% include work.html use = project %}
+    {% endfor %}
+  {% endfor %}
+
+  {% assign project = projects[3] %}
+
+  {% include work.html use=project class="extended" %}
+  {% include work.html use=project class="two-thirds" %}
+
+  <div class="full divider">STUFF</div>
+
+  {% include work.html use=project class="half" %}
+  {% include work.html use=project class="half" %}
+
+  <hr class="full">
+
+  {% include work.html use=project class="two-thirds" %}
+  <div class="columns third">
+    {% for count in (1..2) %}
+      {% assign project = projects[count] %}
+      {% include work.html use=project class="child" %}
+    {% endfor %}
+  </div>

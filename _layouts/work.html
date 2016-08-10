@@ -7,37 +7,35 @@ layout: default
 <div class="columns">
 
   <figure class="full figure">
+    <img class="figure-image" src="{{ site.cdn }}/{{ page.slug}}/hero.{{ page.thumb.ext }}">
   {% if page.thumb.src %}
-    <img class="figure-image" src="/cdn/{{ page.slug}}/hero.{{ page.thumb.ext }}">
     {% if page.thumb.credit %}
     <figcaption class="figure-credit">{{ page.thumb.credit }} <a href="{{ page.thumb.src }}">{{ page.thumb.author }}</a></figcaption>
     {% endif %}
-  {% else %}
-    <img class="figure-image" src="//placehold.it/1260x720">
   {% endif %}
   </figure>
 
   <div class="half">
-    <h5 class="title" style="margin-bottom: 0">SUMMARY</h5>
+    <h5 class="marginless">SUMMARY</h5>
     {{ page.summary }}
   </div>
 
   <section class="half columns">
     <div class="two-thirds">
-      <h5 class="title" style="margin-bottom: 0">ROLE</h5>
+      <h5 class="marginless">ROLE</h5>
       <span>{{ page.role }} using</span><br>
       <span>{{ page.tags | array_to_sentence_string | replace: "-"," " }}.</span>
     </div>
     <div class="third">
-      <h5 class="title" style="margin-bottom: 0">FINISHED</h5>
+      <h5 class="marginless">FINISHED</h5>
       <span>{{ page.date | date:"%Y" }}.</span>
     {% if page.original_date %}
-      <deL>{{ page.original_date }}</del>
+      <del>{{ page.original_date }}</del>
     {% endif %}
     </div>
   </section>
 
-  <div class="full {% if page.columns %}columns{% endif %}">
+  <div class="full columns">
     {{ content }}
   </div>
 

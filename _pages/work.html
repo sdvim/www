@@ -5,36 +5,20 @@ permalink: /work/
 nav: true
 footer: true
 ---
+<h1 class="title hidden-desktop">Work</h1>
 
 <section class="columns">
 
-  {% assign sizes = site.works | group_by: "size" | reverse %}
-  {% for size in sizes %}
-    {% assign projects = size.items | sort: "year" | reverse %}
-    {% for project in projects | limit: 6 %}
-      {% include work.html use = project %}
-    {% endfor %}
+  {% for work in site.works | sort: "date" | reverse %}
+
+  <a class="work full {{ work.categories[0] | replace: ' ','-' | replace:'-&-',' ' }} {{ include.class }}" href="{{ work.url | prepend: site.baseurl }}">
+    <img class="work-figure" src="{{ site.cdn }}/{{ work.slug }}/hero.{{ work.thumb.ext }}">
+    <h3 class="work-title">{{ work.title }}</h3>
+    <h5 class="work-category">{{ work.category }}</h5>
+  </a>
+
   {% endfor %}
 
-  {% assign project = projects[3] %}
-
-  {% include work.html use=project class="extended" %}
-  {% include work.html use=project class="two-thirds" %}
-
-  <div class="full divider">STUFF</div>
-
-  {% include work.html use=project class="half" %}
-  {% include work.html use=project class="half" %}
-
-  <hr class="full">
-
-  {% include work.html use=project class="two-thirds" %}
-  <div class="columns third">
-    {% for count in (1..2) %}
-      {% assign project = projects[count] %}
-      {% include work.html use=project class="child" %}
-    {% endfor %}
-  </div>
   <a class="half btn large filled accent" href="/hire/" style="margin-top: 1.5rem">Let's make something, together</a>
 
 </section>

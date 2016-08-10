@@ -3,6 +3,7 @@ username: sdvim
 highlighter: rogue # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json", "README.md"]
 include: ["_pages"]
+cdn: /cdn
 
 # gems: ["jekyll-paginate"]
 # paginate: 10
