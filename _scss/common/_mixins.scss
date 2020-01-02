@@ -1,7 +1,0 @@
-@mixin transition($property: all, $timing: 300ms, $easing: cubic-bezier(.37, .2, .26, 1)) {
-  transition: $property $timing $easing;
-}
-
-@mixin font-size($size) {
-  font-size: fontsize($size); // move logic from function to here!
-}

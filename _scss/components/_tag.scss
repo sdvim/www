@@ -1,9 +1,0 @@
-.tag {
-  @include font-size(tiny);
-  background: palette(background, shade);
-  color: palette(background, tint);
-  display: inline-block;
-  float: left;
-  font-weight: bold;
-  padding: 0 .3em;
-}
