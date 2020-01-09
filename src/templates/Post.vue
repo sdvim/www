@@ -108,6 +108,12 @@ query Post ($id: ID!) {
       color: var(--title-color);
     }
 
+    hr {
+      border: 0;
+      border-bottom: 1px solid;
+      margin: calc(var(--space) / 2) 0;
+    }
+
     img {
       width: calc(100% + var(--space) * 2);
       margin-left: calc(var(--space) * -1);
