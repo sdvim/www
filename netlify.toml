@@ -1,0 +1,21 @@
+[[redirects]]
+  from = "https://steve.dellavalentina.com/*"
+  to = "https://stevedv.com/:splat"
+  status = 302
+  force = true
+  [redirects.headers]
+    Set-Cookie = "accord=100; Domain=stevedv.com"
+  
+[[redirects]]
+  from = "https://sdv.im/*"
+  to = "https://stevedv.com/:splat"
+  status = 302
+  force = true
+  [redirects.headers]
+    Set-Cookie = "accord=-100; Domain=stevedv.com"
+  
+[[redirects]]
+  from = "https://blog.stevedv.com/*"
+  to = "https://stevedv.com/blog/:splat"
+  status = 301
+  force = true
