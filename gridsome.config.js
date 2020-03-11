@@ -9,7 +9,7 @@ module.exports = {
   siteDescription: 'Developer. Designer. Husband. Friend.',
 
   templates: {
-    Post: '/:title',
+    Post: '/blog/:title',
     Tag: '/tag/:id'
   },
 

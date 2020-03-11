@@ -12,6 +12,8 @@
 		</p>
 
 		<p class="author__links">
+			<a href="/blog">Blog</a>
+			<a href="//hire.stevedv.com">Portfolio</a>
 			<a href="//twitter.com/sdvim">Twitter</a>
 			<a href="//instagram.com/sdvim">Instagram</a>
 		</p>
