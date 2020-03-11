@@ -1,13 +1,13 @@
 [[redirects]]
   from = "https://steve.dellavalentina.com/*"
   to = "https://stevedv.com/:splat"
-  status = 303
+  status = 307
   force = true
   
 [[redirects]]
   from = "https://sdv.im/*"
   to = "https://stevedv.com/:splat"
-  status = 303
+  status = 307
   force = true
   
 [[redirects]]
@@ -19,4 +19,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Referrer-Policy = "strict-origin-when-cross-origin"
+    Referrer-Policy = "origin-when-cross-origin"
