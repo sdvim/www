@@ -4,7 +4,7 @@
   status = 302
   force = true
   [redirects.headers]
-    Set-Cookie = "accord=100; Domain=stevedv.com"
+    Set-Cookie = "accord=100;"
   
 [[redirects]]
   from = "https://sdv.im/*"
@@ -12,7 +12,7 @@
   status = 302
   force = true
   [redirects.headers]
-    Set-Cookie = "accord=-100; Domain=stevedv.com"
+    Set-Cookie = "accord=-100;"
   
 [[redirects]]
   from = "https://blog.stevedv.com/*"
