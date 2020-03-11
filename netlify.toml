@@ -1,21 +1,22 @@
 [[redirects]]
   from = "https://steve.dellavalentina.com/*"
   to = "https://stevedv.com/:splat"
-  status = 302
+  status = 303
   force = true
-  [redirects.headers]
-    Set-Cookie = "accord=100;"
   
 [[redirects]]
   from = "https://sdv.im/*"
   to = "https://stevedv.com/:splat"
-  status = 302
+  status = 303
   force = true
-  [redirects.headers]
-    Set-Cookie = "accord=-100;"
   
 [[redirects]]
   from = "https://blog.stevedv.com/*"
   to = "https://stevedv.com/blog/:splat"
   status = 301
   force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Referrer-Policy = "strict-origin-when-cross-origin"
