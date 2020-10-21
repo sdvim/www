@@ -26,10 +26,13 @@ async function getAllworks() {
             works {
               id
               slug
+              emoji
               title
+              description
               content {
                 __typename
               }
+              category
               published_at
             }
           }`,
@@ -68,8 +71,12 @@ async function getAllworks() {
     return {
       id: item.id,
       slug: item.slug,
+      url: `work/${item.slug}`,
+      emoji: item.emoji,
       title: item.title,
       content: item.content,
+      category: item.category,
+      description: item.description,
       date: item.published_at
     };
   });

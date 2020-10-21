@@ -2,7 +2,7 @@
 layout: layouts/home.njk
 templateClass: tmpl-post
 eleventyNavigation:
-  key: Post
+  key: Work
   order: 4
 pagination:
   data: works
@@ -14,15 +14,19 @@ permalink: work{% if pagination.pageNumber > 0 %}/page{{ pagination.pageNumber +
 {% set htmlTitle = item.title %}
 
 {% block content %}
-  <h2>Unfiltered, raw and probably full of typos</h2>
+  <h1>Work</h1>
 
   {# loop through paginated item #}
   {% for item in pagination.items %}
     {% if loop.first %}<ul>{% endif %}
       <li>
-        <h2><a href="/work/{{ item.slug }}">{{ item.title }} </a></h2>
-        <p>{{ item.date }}</p>
-        <br>
+        <a href="/work/{{ item.slug }}">
+          <h3>
+            <span>{{ item.title }}</span>
+            <span>{{ item.category }}</span>
+          </h3>
+          <p>{{ item.description }}</p>
+        </a>
       </li>
     {% if loop.last %}</ul>{% endif %}
   {% endfor %}
