@@ -1,0 +1,19 @@
+---
+layout: layouts/home.njk
+templateClass: tmpl-post
+pagination:
+  data: works
+  size: 1
+  alias: work
+permalink: work/{{ work.slug }}/index.html
+---
+{% include "postslist.njk" %}
+{% set htmlTitle = work.title %}
+
+{% block content %}
+  {# work #}
+
+  <h1>{{ work.title }}</h1>
+{{ work.content | safe }}
+
+{% endblock %}

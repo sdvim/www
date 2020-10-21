@@ -1,0 +1,20 @@
+{
+  "title": "Steve",
+  "url": "https://stevedv.com/",
+  "description": "Developer. Designer. Husband. Friend.",
+  "feed": {
+    "subtitle": "Developer. Designer. Husband. Friend.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://stevedv.com/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://stevedv.com/feed/feed.json"
+  },
+  "author": {
+    "name": "Steve",
+    "email": "s.dellavalentina@gmail.com",
+    "url": "https://stevedv.com/about/"
+  }
+}

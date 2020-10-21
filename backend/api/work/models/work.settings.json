@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "works",
+  "info": {
+    "name": "Work",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "emoji": {
+      "type": "string",
+      "maxLength": 2,
+      "unique": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "article",
+        "game",
+        "website",
+        "graphic",
+        "audio",
+        "app"
+      ],
+      "default": "article"
+    },
+    "createDate": {
+      "type": "date"
+    },
+    "finishDate": {
+      "type": "date"
+    },
+    "revisionDate": {
+      "type": "date"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "content.code",
+        "content.media",
+        "content.text"
+      ]
+    }
+  }
+}
