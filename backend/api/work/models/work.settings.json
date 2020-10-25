@@ -55,6 +55,11 @@
         "content.media",
         "content.text"
       ]
+    },
+    "affinity": {
+      "type": "component",
+      "repeatable": true,
+      "component": "metadata.affinity"
     }
   }
 }

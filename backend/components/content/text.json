@@ -2,12 +2,18 @@
   "collectionName": "components_content_texts",
   "info": {
     "name": "Text",
-    "icon": "align-left"
+    "icon": "align-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "text": {
       "type": "richtext"
+    },
+    "affinity": {
+      "type": "component",
+      "repeatable": true,
+      "component": "metadata.affinity"
     }
   }
 }

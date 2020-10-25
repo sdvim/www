@@ -2,12 +2,18 @@
   "collectionName": "components_content_codes",
   "info": {
     "name": "Code",
-    "icon": "code"
+    "icon": "code",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "code": {
       "type": "text"
+    },
+    "affinity": {
+      "type": "component",
+      "repeatable": true,
+      "component": "metadata.affinity"
     }
   }
 }
