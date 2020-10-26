@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_metadata_timelines",
+  "info": {
+    "name": "timeline",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date"
+    }
+  }
+}

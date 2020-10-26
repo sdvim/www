@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_metadata_layouts",
+  "info": {
+    "name": "layout",
+    "icon": "columns"
+  },
+  "options": {},
+  "attributes": {
+    "class": {
+      "type": "enumeration",
+      "enum": [
+        "widthFull",
+        "widthTwoThird",
+        "widthOneHalf",
+        "widthOneThird",
+        "alignLeft",
+        "alignCenter",
+        "alignRight"
+      ]
+    }
+  }
+}

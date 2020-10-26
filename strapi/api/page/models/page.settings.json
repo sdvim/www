@@ -24,12 +24,6 @@
     "description": {
       "type": "richtext"
     },
-    "timelineStart": {
-      "type": "date"
-    },
-    "timelineFinish": {
-      "type": "date"
-    },
     "slug": {
       "type": "uid",
       "targetField": "title",
@@ -60,7 +54,7 @@
     "affinity": {
       "type": "component",
       "repeatable": true,
-      "component": "affinity.affinity"
+      "component": "metadata.affinity"
     },
     "content": {
       "type": "dynamiczone",
@@ -68,6 +62,11 @@
         "content.text",
         "content.image"
       ]
+    },
+    "timeline": {
+      "type": "component",
+      "repeatable": false,
+      "component": "metadata.timeline"
     }
   }
 }

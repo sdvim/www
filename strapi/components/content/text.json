@@ -2,30 +2,28 @@
   "collectionName": "components_content_texts",
   "info": {
     "name": "text",
-    "icon": "align-left"
+    "icon": "align-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "text": {
       "type": "richtext"
     },
-    "width": {
-      "type": "enumeration",
-      "enum": [
-        "full",
-        "twoThird",
-        "oneHalf",
-        "oneThird"
-      ]
+    "affinity": {
+      "type": "component",
+      "repeatable": true,
+      "component": "metadata.affinity"
     },
-    "align": {
-      "type": "enumeration",
-      "enum": [
-        "left",
-        "center",
-        "right"
-      ],
-      "default": "left"
+    "layout": {
+      "type": "component",
+      "repeatable": true,
+      "component": "metadata.layout"
+    },
+    "timeline": {
+      "type": "component",
+      "repeatable": false,
+      "component": "metadata.timeline"
     }
   }
 }

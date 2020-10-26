@@ -13,8 +13,11 @@
         "personal",
         "professional",
         "designer",
-        "developer"
-      ]
+        "developer",
+        "financial"
+      ],
+      "default": "personal",
+      "required": true
     },
     "amount": {
       "type": "integer",
