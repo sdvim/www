@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_content_texts",
+  "info": {
+    "name": "text",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "twoThird",
+        "oneHalf",
+        "oneThird"
+      ]
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "left"
+    }
+  }
+}

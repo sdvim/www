@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "emoji": {
+      "type": "string",
+      "required": false,
+      "unique": true,
+      "maxLength": 2
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "timelineStart": {
+      "type": "date"
+    },
+    "timelineFinish": {
+      "type": "date"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "private": false,
+      "required": false
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "page",
+        "writing",
+        "game",
+        "app",
+        "web",
+        "visual",
+        "audio"
+      ],
+      "default": "page"
+    },
+    "children": {
+      "collection": "page",
+      "via": "parent"
+    },
+    "parent": {
+      "model": "page",
+      "via": "children"
+    },
+    "affinity": {
+      "type": "component",
+      "repeatable": true,
+      "component": "affinity.affinity"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "content.text",
+        "content.image"
+      ]
+    }
+  }
+}

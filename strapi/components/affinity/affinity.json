@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_affinity_affinities",
+  "info": {
+    "name": "affinity",
+    "icon": "heart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "personal",
+        "professional",
+        "designer",
+        "developer"
+      ]
+    },
+    "amount": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

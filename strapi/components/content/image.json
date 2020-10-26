@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_content_images",
+  "info": {
+    "name": "image",
+    "icon": "image"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "twoThird",
+        "oneHalf",
+        "oneThird"
+      ],
+      "default": "full"
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "left"
+    }
+  }
+}
