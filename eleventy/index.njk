@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Website of Steve Della Valentina</title>
+  <meta name="description" content="Website of Steve Della Valentina">
+  <meta name="author" content="Steve Della Valentina">
+</head>
+
+<body>
+  <nav>
+    <ul>
+    {% for page in pages | reverse %}
+    {% if not page.parent %}
+      <li>
+        <a href="#{{ page.slug | slug }}">{{ page.title }}</a>
+        {% if page.children %}
+        <ul>
+        {% for child in page.children %}
+          <li><a href="#{{ child.slug | slug }}">{{ child.title }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+  </nav>
+</body>
+</html>
