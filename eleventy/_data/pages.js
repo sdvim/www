@@ -40,6 +40,10 @@ async function getAllPages() {
               children {
                 title
                 slug
+                children {
+                  title
+                  slug
+                }
               }
             }
           }`,
