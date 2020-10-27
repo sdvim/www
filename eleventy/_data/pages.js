@@ -33,6 +33,10 @@ async function getAllPages() {
               title
               slug
               published_at
+              affinity {
+                type
+                amount
+              }
               parent {
                 title
                 slug
@@ -70,6 +74,12 @@ async function getAllPages() {
   }
 
   const pagesFormatted = pages.map((item) => {
+    const affinity = item.affinity.length > 0 ? {} : null;
+    if (affinity) {
+      item.affinity.forEach(entry => {
+        affinity[entry.type] = entry.amount;
+      });
+    }
     return {
       id: item.id,
       title: item.title,
@@ -77,6 +87,7 @@ async function getAllPages() {
       date: item.published_at,
       parent: item.parent,
       children: item.children,
+      affinity
     };
   });
 
