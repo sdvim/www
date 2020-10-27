@@ -14,7 +14,8 @@
         "professional",
         "designer",
         "developer",
-        "financial"
+        "financial",
+        "meta"
       ],
       "default": "personal",
       "required": true
