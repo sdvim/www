@@ -8,3 +8,17 @@ permalink: "{{ page.slug | slug }}/"
 ---
 
 <h1>{{ page.title }}</h1>
+
+<h2>{{ page.description }}</h2>
+
+{% if page.content.length > 0 %}
+  {% for content in page.content %}
+    {% if content.text %}
+      {{ content.text | striptags(true) | escape | nl2br }}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+<hr>
+
+<date>Posted: {{ page.date | stringDate }}</date>
