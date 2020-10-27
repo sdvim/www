@@ -22,8 +22,8 @@
   <li>
     {{ link(page) }}
     {% set children = pages | where("parent", page.slug) %}
-    {% if children %}
-    {{ nestedLinks(children) }}
+    {% if children.length > 0 %}
+      {{ nestedLinks(children) }}
     {% endif %}
   </li>
 {% endfor %}
