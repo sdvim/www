@@ -76,7 +76,7 @@ async function getAllPages() {
       id: item.id,
       title: item.title,
       slug: item.slug,
-      date: item.published_at,
+      date: new Date(item.published_at) || new Date(),
       parent: item.parent ? item.parent.slug : item.parent,
       children: item.children,
       affinity

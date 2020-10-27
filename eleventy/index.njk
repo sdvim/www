@@ -9,7 +9,7 @@
 </head>
 
 {% macro link(page) %}
-<a href="#{{ page.slug | slug }}">{{ page.title }}
+<a href="/{{ page.slug | slug }}">{{ page.title }}
   {% if page.affinity %}
   <small>{{ page.affinity | dump }}</small>
   {% endif %}
