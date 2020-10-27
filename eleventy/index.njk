@@ -16,13 +16,14 @@
 </a>
 {% endmacro %}
 
-{% macro nestedLinks(pages) %}
+{% macro nestedLinks(selectedPages) %}
 <ul>
-{% for page in pages %}
+{% for page in selectedPages %}
   <li>
     {{ link(page) }}
-    {% if page.children %}
-    {{ nestedLinks(page.children) }}
+    {% set children = pages | where("parent", page.slug) %}
+    {% if children %}
+    {{ nestedLinks(children) }}
     {% endif %}
   </li>
 {% endfor %}

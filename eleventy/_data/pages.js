@@ -30,6 +30,7 @@ async function getAllPages() {
         body: JSON.stringify({
           query: `{
             pages(publicationState:${setting.publicationState}) {
+              id
               title
               slug
               published_at
@@ -38,16 +39,7 @@ async function getAllPages() {
                 amount
               }
               parent {
-                title
                 slug
-              }
-              children {
-                title
-                slug
-                children {
-                  title
-                  slug
-                }
               }
             }
           }`,
@@ -85,7 +77,7 @@ async function getAllPages() {
       title: item.title,
       slug: item.slug,
       date: item.published_at,
-      parent: item.parent,
+      parent: item.parent ? item.parent.slug : item.parent,
       children: item.children,
       affinity
     };
