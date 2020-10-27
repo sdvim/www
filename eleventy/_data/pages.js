@@ -72,6 +72,7 @@ async function getAllPages() {
   }
 
   const pagesFormatted = pages.map((item) => {
+    const slug = item.slug !== "home" ? item.slug : "";
     const date = item.published_at ? new Date(item.published_at) : new Date();
     const affinity = item.affinity.length > 0 ? {} : null;
     if (affinity) {
@@ -82,11 +83,11 @@ async function getAllPages() {
     return {
       id: item.id,
       title: item.title,
-      slug: item.slug,
       description: item.description,
       content: item.content,
       parent: item.parent ? item.parent.slug : item.parent,
       children: item.children,
+      slug,
       date,
       affinity
     };
