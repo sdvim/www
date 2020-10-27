@@ -66,6 +66,7 @@ async function getAllPages() {
   }
 
   const pagesFormatted = pages.map((item) => {
+    const date = item.published_at ? new Date(item.published_at) : new Date();
     const affinity = item.affinity.length > 0 ? {} : null;
     if (affinity) {
       item.affinity.forEach(entry => {
@@ -79,6 +80,7 @@ async function getAllPages() {
       date: new Date(item.published_at) || new Date(),
       parent: item.parent ? item.parent.slug : item.parent,
       children: item.children,
+      date,
       affinity
     };
   });
