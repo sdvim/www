@@ -1,40 +1,6 @@
-<!doctype html>
+---
+layout: base.njk
+permalink: /
+---
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Website of Steve Della Valentina</title>
-  <meta name="description" content="Website of Steve Della Valentina">
-  <meta name="author" content="Steve Della Valentina">
-</head>
-
-{% macro link(page) %}
-<a href="/{{ page.slug | slug }}">{{ page.title }}
-  {% if page.affinity %}
-  <small>{{ page.affinity | dump }}</small>
-  {% endif %}
-</a>
-{% endmacro %}
-
-{% macro nestedLinks(selectedPages) %}
-<ul>
-{% for page in selectedPages %}
-  <li>
-    {{ link(page) }}
-    {% set children = pages | where("parent", page.slug) %}
-    {% if children %}
-    {{ nestedLinks(children) }}
-    {% endif %}
-  </li>
-{% endfor %}
-</ul>
-{% endmacro%}
-
-{% set topPages = pages | rejectattr("parent") | reverse %}
-
-<body>
-  <nav>
-    {{ nestedLinks(topPages) }}
-  </nav>
-</body>
-</html>
+<pre>{{ pages | dump(2) }}</pre>
