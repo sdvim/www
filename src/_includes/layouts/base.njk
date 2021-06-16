@@ -22,10 +22,12 @@
     </main>
 
     <footer>
+    {%- if updated %}
       <small>
         <span>Last updated:</span>
-        <date>{{ page.date | stringDate }}</date>
+        <date>{{ updated | stringDate }}</date>
       </small>
+    {%- endif %}
     </footer>
 
   </body>

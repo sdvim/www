@@ -19,6 +19,7 @@
   "homepage": "https://github.com/sdvim/www#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-navigation": "^0.2.0"
+    "@11ty/eleventy-navigation": "^0.2.0",
+    "luxon": "^1.27.0"
   }
 }
