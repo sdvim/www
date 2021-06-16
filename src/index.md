@@ -1,5 +1,4 @@
 ---
-date: Last Modified
 eleventyNavigation:
   key: Home
   order: -1
