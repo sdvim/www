@@ -3,4 +3,22 @@ body {
   max-width: 720px;
   margin: 1em auto;
   padding: 0 1em;
+  background: #fff;
+  color: #111;
 }
+
+a {
+  color: #d80;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #eee;
+  }
+
+  a {
+    color: #fc0;
+  }
+}
+
