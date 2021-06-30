@@ -5,10 +5,27 @@ body {
   padding: 0 1em;
   background: #fff;
   color: #111;
+  line-height: 1.4;
 }
 
 a {
   color: #d80;
+}
+
+header ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li {
+  margin: 0 0 0 1em;
+  list-style: none;
+}
+
+header ul li:first-child {
+  margin: 0;
+  flex: 1;
 }
 
 @media (prefers-color-scheme: dark) {

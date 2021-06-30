@@ -2,6 +2,7 @@
 title: Home
 eleventyNavigation:
   key: Home
+  title: Steve Della Valentina
   order: -1
 ---
 ### Hey, I'm Steve.
