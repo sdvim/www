@@ -1,0 +1,48 @@
+---
+import '../styles/styles.css';
+const { content: { title, description, updated } } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{ description }">
+    <title>{ title }</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/now">Now</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <main>
+      { title ? (<h1>{ title }</h1>) : "" }
+      <slot />
+    </main>
+
+    <footer>
+    { updated && (
+      <small>
+        <span>Last updated:</span>
+        <date>{ new Date(updated).toLocaleDateString('en-us', {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        }) }</date>
+      </small>
+    )}
+    </footer>
+
+  </body>
+</html>

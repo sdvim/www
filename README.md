@@ -1,6 +1,6 @@
-Personal website, blog, portfolio, and digital garden built with [11ty](https://11ty.dev).
+Personal website, blog, portfolio, and digital garden built with [Astro](https://astro.build).
 
 ```
 npm install
-npx @11ty/eleventy --serve
+npm run dev
 ```

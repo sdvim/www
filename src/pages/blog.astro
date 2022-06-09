@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/base.astro';
+const title = "Blog";
+const entries = await Astro.glob('./blog/*.md');
+const filteredEntries = entries.filter((entry) => entry.frontmatter.published);
+---
+
+<BaseLayout content={{title}}>
+  {filteredEntries.map(({ url, frontmatter: { title, description, date } }) => 
+    <p>
+      <strong>{title}</strong> -
+      <span>{description}</span>
+      <br>
+      <a href={url}>
+        <date>{ new Date(date).toLocaleDateString('en-us', {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        }) }</date>
+      </a>
+    </p>
+  )}
+</BaseLayout>

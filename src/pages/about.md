@@ -1,8 +1,7 @@
 ---
+layout: ../layouts/base.astro
 title: About
 updated: 2021-06-15
-eleventyNavigation:
-  key: About
 ---
 ### I’m a software developer, husband, dad of three cats, and friend to most.
 

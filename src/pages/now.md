@@ -1,8 +1,7 @@
 ---
+layout: ../layouts/base.astro
 title: Now
 updated: 2021-12-31
-eleventyNavigation:
-  key: Now
 ---
 
 ### This is a [now](//nownownow.com/about) page, an up to date summary of what I am currently focused on.

@@ -1,9 +1,6 @@
 ---
 title: Home
-eleventyNavigation:
-  key: Home
-  title: Steve Della Valentina
-  order: -1
+layout: '../layouts/base.astro'
 ---
 ### Hey, I'm Steve.
 
