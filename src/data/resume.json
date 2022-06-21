@@ -1,0 +1,75 @@
+{
+  "primary": {
+    "name": "",
+    "title": "",
+    "summary": ""
+  },
+  "contacts": {
+    "email": "",
+    "phone": "",
+    "address": "",
+    "linkedin": "",
+    "web": ""
+  },
+  "experiences": [
+    {
+      "position": {
+        "title": "",
+        "team": "",
+        "startDate": "",
+        "endDate": "",
+        "employment": ""
+      },
+      "company": {
+        "name": "",
+        "industry": "",
+        "location": "",
+        "url": "",
+        "logo": ""
+      },
+      "skills": [
+
+      ],
+      "description": [
+
+      ]
+    }
+  ],
+  "skills": {
+    "frontend": [
+
+    ],
+    "backend": [
+
+    ]
+  },
+  "tools": {
+    "design": [
+
+    ],
+    "development": [
+
+    ]
+  },
+  "educations": [
+    {
+      "name": "",
+      "degree": "",
+      "location": "",
+      "endDate": "",
+      "gpa": "",
+      "logo": "",
+      "description": [
+
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "name": "",
+      "organization": "",
+      "year": 2000,
+      "url": ""
+    }
+  ]
+}
