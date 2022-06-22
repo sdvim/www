@@ -14,16 +14,65 @@
   "experiences": [
     {
       "position": {
-        "title": "",
-        "team": "",
-        "startDate": "",
-        "endDate": "",
-        "employment": ""
+        "title": "Software Engineer",
+        "team": "Assistant Smart Display",
+        "startDate": "2020, 6",
+        "endDate": "2021, 10"        
       },
       "company": {
-        "name": "",
-        "industry": "",
-        "location": "",
+        "name": "Google",
+        "industry": "Technology",
+        "location": "Remote",
+        "skip": false,
+        "url": "",
+        "logo": ""
+      },
+      "skills": [
+        "Dart",
+        "Flutter"
+      ],
+      "description": [
+        "Developed air quality UIs for an expedited launch during wildfire season",
+        "Implemented user enrollment flow for upcoming feature",
+        "Improved voice plate with new animation and smoother transitions ",
+        "Started backend data integration for user-wide accessibility settings for devices",
+        "Learned and frequently used internal tools: Rapid, Fusion, and Scuba"        
+      ]
+    },
+    {
+      "position": {
+        "title": "UX Engineer",
+        "startDate": "2018, 11",
+        "endDate": "2020, 03"
+      },
+      "company": {
+        "name": "Essential",
+        "industry": "Consumer Electronics",
+        "location": "Palo Alto, CA",
+        "skip": false,
+        "url": "",
+        "logo": ""
+      },
+      "skills": [
+        "Vue",
+        "Vuex"
+      ],
+      "description": [
+        "Prototyped navigation models, on-screen keyboards, customization features, and other system components for project GEM, a candybar shaped mobile device",
+        "Developed various high-fidelity sample applications for GEM"        
+      ]
+    },
+    {
+      "position": {
+        "title": "Frontend Software Engineer",
+        "startDate": "2018, 03",
+        "endDate": "2020, 03"
+      },
+      "company": {
+        "name": "Essential",
+        "industry": "Consumer Electronics",
+        "location": "Palo Alto, CA",
+        "skip": true,
         "url": "",
         "logo": ""
       },
@@ -31,45 +80,176 @@
 
       ],
       "description": [
+        "Maintained and updated primary company website with internationalized content, promotional forms, and new pages; deployed to Heroku with a SecureCDN cache to serve thousands of daily active users",
+        "Engineered custom features like bundled add-ons for Shopify online store",
+        "Coded and helped design theme for Zendesk support website",
+        "Supported marketing team by coding several Mailchimp email templates"
+      ]
+    },
+    {
+      "position": {
+        "title": "Frontend Engineer",
+        "startDate": "2016, 07",
+        "endDate": "2018, 03"
+      },
+      "company": {
+        "name": "Megastar",
+        "industry": "Social Mobile App",
+        "location": "Oakland, CA",        
+        "url": "",
+        "logo": ""
+      },
+      "skills": [
+        "Backbone.js",
+        "SCSS"
+      ],
+      "description": [
+        "Rewrote most of the app interface using Backbone.js and SCSS",
+        "Designed iconography and style guide for app components with Sketch",
+        "Benchmarked UI performance and made optimizations using Chrome Dev Tools, reducing janky animations and expensive repaints by more than 30%"
+      ]
+    },
+    {
+      "position": {
+        "title": "Web Developer",
+        "startDate": "2015, 06",
+        "endDate": "2016, 07"
+      },
+      "company": {
+        "name": "Inhalio",
+        "industry": "B2B Hardware",
+        "location": "San Jose, CA",        
+        "url": "",
+        "logo": ""
+      },
+      "skills": [
 
+      ],
+      "description": [
+        "Created several kiosk interfaces specialized in scent diffusion",
+        "Engineered a method of silent over-the-air deployment updates",
+        "Built and maintained primary company website using Jekyll",
+        "Developed a kiosk used in New York Fashion Week for taking selfies and seeing calendar of events in realtime, used by several hundred attendees"
+      ]
+    },
+    {
+      "position": {
+        "title": "Mobile Application Specialist",
+        "startDate": "2014, 07",
+        "endDate": "2015, 06"        
+      },
+      "company": {
+        "name": "SchoolMessenger",
+        "industry": "EdTech Mobile Apps",
+        "location": "Santa Cruz, CA",        
+        "url": "",
+        "logo": ""
+      },
+      "skills": [
+
+      ],
+      "description": [
+        "Created and published 27 mobile applications for school districts",
+        "Designed icons, splash screens, and headers for over 130 mobile applications",
+        "Wrote several command-line tools to automate mechanical tasks"
+      ]
+    },
+    {
+      "position": {
+        "title": "Web Developer Intern",
+        "startDate": "2013, 06",
+        "endDate": "2013, 08"
+      },
+      "company": {
+        "name": "Grooveshark",
+        "industry": "Music Streaming App",
+        "location": "Gainesville, FL",
+        "url": "",
+        "logo": ""
+      },
+      "skills": [
+        "Backbone.js",
+        "Git"
+      ],
+      "description": [
+        "Prototyped several screens using Backbone.js in collaboration with product team",
+        "Learned to use Git, Less.js, Underscore.js, and Vagrant",
+        "Designed and developed a Tumblr theme for company blog"
+      ]
+    },
+    {
+      "position": {
+        "title": "Web Coordinator",
+        "team": "Student Government",
+        "startDate": "2010, 05",
+        "endDate": "2013, 05"
+      },
+      "company": {
+        "name": "University of Central Florida",
+        "industry": "University",
+        "location": "Orlando, FL",
+        "url": "",
+        "logo": ""
+      },
+      "skills": [
+        "PHP",
+        "MySQL"
+      ],
+      "description": [
+        "Developed website frontend that served over 300 unique daily active users",
+        "Created a simple CMS to manage file uploads",
+        "Optimized load times using asynchronous loading and sprite sheets",
+        "Parsed Facebook events, Twitter statuses, and WordPress posts as sources for more website content"
       ]
     }
   ],
   "skills": {
     "frontend": [
-
+      "CSS / SCSS",
+      "Dart / Flutter",
+      "HTML",
+      "JavaScript",
+      "React",
+      "Vue / Vuex"
     ],
     "backend": [
-
+      "Apache",
+      "Firebase",
+      "GraphQL",
+      "MySQL",
+      "PHP"
     ]
   },
   "tools": {
     "design": [
-
+      "Figma",
+      "Illustrator",
+      "Photoshop",
+      "Premiere",
+      "Sketch"
     ],
     "development": [
-
+      "Git",
+      "Heroku",
+      "Netlify",
+      "Static Site Generators",
+      "Unix"
     ]
   },
   "educations": [
     {
-      "name": "",
-      "degree": "",
-      "location": "",
-      "endDate": "",
-      "gpa": "",
+      "name": "University of Central Florida",
+      "degree": "Bachelors of Art in Digital Media",
+      "location": "Orlando, FL",
+      "startDate": "2009, 06",
+      "endDate": "2013, 12",
       "logo": "",
       "description": [
-
+        "Focused in Game Design, minored in Computer Science",
+        "Developed 5 video games for different platforms as team lead and programmer",
+        "Learned and utilized several algorithms and data structures for assignments",
+        "Learned basic usage of C, Java, Maya, Flash, Premiere, Unity, and Construct 2"        
       ]
-    }
-  ],
-  "awards": [
-    {
-      "name": "",
-      "organization": "",
-      "year": 2000,
-      "url": ""
     }
   ]
 }

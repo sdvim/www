@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/base.astro';
+import { experiences } from '../data/resume.json';
+const title = "Resume";
+const dateRange = (start, end) => {
+  const startDate = new Date(start);
+  const endDate = new Date(end);
+  const sM = startDate.getMonth()+1;
+  const sY = startDate.getFullYear();
+  const eM = endDate.getMonth()+1;
+  const eY = endDate.getFullYear();
+
+  return `${sM}/${sY} — ${eM}/${eY}`;
+}
+---
+
+<BaseLayout content={{title}}>
+  {experiences.map(({position, company, description}) => (
+    <article>
+      { !company.skip && (
+      <p>
+        <strong>{company.name}</strong>
+        <span>
+          {company.industry}
+          &nbsp;&bullet;&nbsp;
+          {company.location}
+        </span>
+      </p>
+      )}
+      <p>
+        <span>{position.title}{position.team ? `, ${position.team}` : ""}</span>
+        <date>{dateRange(position.startDate, position.endDate)}</date>
+      </p>
+      <ul>
+        {description.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    </article>
+  ))}
+</BaseLayout>
