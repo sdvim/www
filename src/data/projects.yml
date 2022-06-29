@@ -1,0 +1,53 @@
+- company: Essential
+  title: UX Prototype
+  url: https://gem.stevedv.com
+  device: gem
+  developer: true
+  year: 2020
+
+- company: Essential
+  title: Websites
+  url: essential
+  device: desktop
+  developer: true
+  designer: true
+  year: 2020
+
+- company: Megastar
+  title: Mobile app
+  url: megastar
+  device: mobile
+  developer: true
+  designer: true
+  year: 2018
+
+- company: Inhalio
+  title: Website
+  url: https://inhalio.stevedv.com
+  device: desktop
+  developer: true
+  year: 2017
+
+- company: SchoolMessenger
+  title: Mobile app designs
+  url: schoolmessenger
+  device: mobile
+  designer: true
+  year: 2015
+
+- company: Flappy Pipe
+  title: HTML5 game
+  url: https://flappypipe.stevedv.com
+  device: mobile
+  developer: true
+  designer: true
+  year: 2014
+
+- company: 
+  title: 
+  url: 
+  device: 
+  developer: 
+  designer: 
+  year: 
+
