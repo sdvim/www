@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/base.astro';
 const title = "Blog";
 const entries = await Astro.glob('./blog/*.md');
-const filteredEntries = entries.filter((entry) => entry.frontmatter.published);
+const filteredEntries = entries.filter((entry) => entry.frontmatter.published).reverse();
 ---
 
 <BaseLayout content={{title}}>
