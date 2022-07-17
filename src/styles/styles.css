@@ -28,6 +28,14 @@ header ul li:first-child {
   flex: 1;
 }
 
+blockquote {
+  border-left: 0.125em solid;
+  margin: 0;
+  padding: 1px 1em;
+  font-style: italic;
+  font-size: 0.85em;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #111;
