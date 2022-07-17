@@ -3,6 +3,7 @@ layout: ../../layouts/base.astro
 published: true
 title: Better late than never
 date: 2020-01-02
+location: LAS Airport in Paradise, NV
 description: "It's taken me six years to write this."
 coverImage: ./images/dirty-windows.jpg
 coverImageCaption: "Cover photo was taken in 2014, the very first photo I took of California."

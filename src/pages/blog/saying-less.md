@@ -2,6 +2,7 @@
 layout: ../../layouts/base.astro
 title: "Saying less"
 date: 2022-07-17
+location: My Kitchen in Draper, UT
 description: "Speaking concisely is hard."
 published: true
 ---
