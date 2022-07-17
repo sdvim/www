@@ -1,4 +1,6 @@
 ---
+layout: ../../layouts/base.astro
+published: true
 title: Better late than never
 date: 2020-01-02
 description: "It's taken me six years to write this."

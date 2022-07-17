@@ -1,16 +1,18 @@
 ---
+layout: ../../layouts/base.astro
+published: true
 title: Y'all Boys Talked
 date: 2020-01-09
 description: "Last year, three of my closest friends and I started a podcast."
-# coverImage: ./images/yall-boys-talkin.jpg
-# coverImageCaption: "Cover photo was from the night of the reunion. It was the only podcast we recorded together in person, all others were over Google Hangouts."
+coverImage: ./images/yall-boys-talkin.jpg
+coverImageCaption: "Cover photo was from the night of the reunion. It was the only podcast we recorded together in person, all others were over Google Hangouts."
 ---
 
 Last year, three of my closest friends and I started a [podcast](https://ybtfm.netlify.app).
 
 In lieu of self-imposed New Year's resolutions, the four of us created goals for each and one another. These goals were based on our personal aspirations, long lost hobbies we once dabbled in, or habits that were probably good for us. The challenge was to complete these goals in six months, right before our 10 year high school reunion.
 
-**What happened?**
+### What happened?
 
 We completed our goals, rewarded ourselves by renting a Tesla Model X, and had a truly great night with some old friends while flexing in no carbon emissions. We then took a two month break to regroup and see what we could do for a second season.
 
@@ -20,7 +22,7 @@ It started off fine until we slowly realized our plates were a bit too full. In 
 
 Then, as the end of the year starts to approach, I realize I'm not the only one. It began with one person writing a essay-length text message in our group chat, followed by my 20 plus minutes of my voice notes, followed by more thoughts and concerns about the longevity of the podcast. In short, the project was becoming a liability for our friendship and some of our personal wellbeing so we ended it earlier.
 
-**What did I learn?**
+### What did I learn?
 
 Podcasting isn't that hard! If you have a laptop with a working microphone, you have everything you need to get started. You can record and edit for free with [Audacity](https://www.audacityteam.org/), and eventually step up to better equipment and software.
 
