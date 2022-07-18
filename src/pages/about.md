@@ -10,4 +10,5 @@ With relentless confidence, internet access, and a bit of luck, I managed to tur
 ### Related pages
 - [Contact](/contact)
 - [Now](/now)
+- [Resume](/resume)
 - [Uses](/uses)
