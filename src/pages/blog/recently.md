@@ -20,7 +20,7 @@ Today I am in search of a full-time position in a time where hiring freezes and 
 
 All things considered, this time away from work has been tremendously beneficial to my overall wellbeing.
 
-I have made it a habit to spend at least 15 days outside in the hot Utah sun, usually by sitting in my backyard and drinking my morning tea.
+I have made it a daily habit to spend at least 15 minutes outside in the hot Utah sun, usually by sitting in my backyard and drinking my morning tea.
 
 I found a therapist is both relatable but also great at probing with questions.
 
