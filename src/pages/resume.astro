@@ -19,16 +19,16 @@ const dateRange = (start, end) => {
   {experiences.map(({position, company, description}) => (
     <article>
       { !company.skip && (
-      <p>
+      <h3 style="display: flex; justify-content: space-between;">
         <strong>{company.name}</strong>
-        <span>
+        <small>
           {company.industry}
           &nbsp;&bullet;&nbsp;
           {company.location}
-        </span>
-      </p>
+        </small>
+      </h3>
       )}
-      <p>
+      <p style="display: flex; justify-content: space-between;">
         <span>{position.title}{position.team ? `, ${position.team}` : ""}</span>
         <date>{dateRange(position.startDate, position.endDate)}</date>
       </p>
