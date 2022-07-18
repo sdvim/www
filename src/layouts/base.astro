@@ -19,10 +19,8 @@ const { content: { title, updated } } = Astro.props;
     <header>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
         <li><a href="/blog">Blog</a></li>
-        <li><a href="/now">Now</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/about">About</a></li>
       </ul>
     </header>
 
@@ -31,8 +29,8 @@ const { content: { title, updated } } = Astro.props;
       <slot />
     </main>
 
-    <footer>
     { updated && (
+    <footer>
       <small>
         <span>Last updated:</span>
         <date>{ new Date(updated).toLocaleDateString('en-us', {
@@ -41,8 +39,8 @@ const { content: { title, updated } } = Astro.props;
           day: "numeric",
         }) }</date>
       </small>
-    )}
     </footer>
+    )}
 
   </body>
 </html>

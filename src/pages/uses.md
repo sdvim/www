@@ -39,3 +39,6 @@ updated: 2022-07-18
 - Sling bag: [The North Face bozer fanny pack](//www.asos.com/us/the-north-face/the-north-face-bozer-fanny-pack-in-yellow/prd/21674067)
 - Water bottle: [Hydro Flask wide mouth with straw lid](//www.hydroflask.com/40-oz-wide-mouth-w-straw-lid?color=white)
 - Socks: Anything from [Smartwool](//www.smartwool.com/)
+
+### Related pages
+- [About](/about)
