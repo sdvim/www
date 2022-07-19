@@ -3,6 +3,11 @@ import BaseLayout from '../layouts/base.astro';
 import { experiences } from '../data/resume.json';
 const title = 'Resume';
 const updated = new Date('2022-06-21');
+const related = {
+  "About": "/about",
+  "Portfolio": "//hire.stevedv.com",
+  "LinkedIn": "//www.linkedin.com/in/sdvim"
+};
 const dateRange = (start, end) => {
   const startDate = new Date(start);
   const endDate = new Date(end);
@@ -15,7 +20,7 @@ const dateRange = (start, end) => {
 }
 ---
 
-<BaseLayout content={{title, updated}}>
+<BaseLayout content={{title, updated, related}}>
   {experiences.map(({position, company, description}) => (
     <article>
       { !company.skip && (
@@ -39,16 +44,4 @@ const dateRange = (start, end) => {
       </ul>
     </article>
   ))}
-  <h3>Related pages</h3>
-  <ul>
-    <li>
-      <a href="/about">About</a>
-    </li>
-    <li>
-      <a href="//hire.stevedv.com">Portfolio</a>
-    </li>
-    <li>
-      <a href="//www.linkedin.com/in/sdvim">LinkedIn</a>
-    </li>
-  </ul>
 </BaseLayout>

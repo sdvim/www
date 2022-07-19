@@ -1,6 +1,6 @@
 ---
 import '../styles/styles.css';
-const { content: { title, updated } } = Astro.props;
+const { content: { title, updated, related } } = Astro.props;
 ---
 
 <!doctype html>
@@ -25,8 +25,17 @@ const { content: { title, updated } } = Astro.props;
     </header>
 
     <main>
-      { title ? (<h1>{ title }</h1>) : "" }
+      { title && <h1>{ title }</h1>}
       <slot />
+
+      { related && <>
+        <h3>Related</h3>
+        <ul>
+          { Object.entries(related).map(([ title, url ]) => (
+            <li><a href={`${url}`}>{title}</a></li>
+          )) }
+        </ul>
+      </> }
     </main>
 
     { updated && (

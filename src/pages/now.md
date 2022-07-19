@@ -1,6 +1,8 @@
 ---
 layout: ../layouts/base.astro
 title: Now
+related:
+  About: /about
 updated: 2022-06-28
 ---
 
@@ -9,6 +11,3 @@ updated: 2022-06-28
 - Living in Draper, Utah with my wife and three cats
 - Consolidating all my notes, bookmarks, and interesting finds into [Logseq](//logseq.com)
 - Working on this website using [Astro](//astro.build)
-
-### Related pages
-- [About](/about)
