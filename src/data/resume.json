@@ -23,13 +23,13 @@
         "name": "Google",
         "industry": "Technology",
         "location": "Remote",
-        "skip": false,
         "url": "",
         "logo": ""
       },
       "skills": [
         "Dart",
-        "Flutter"
+        "Flutter",
+        "a11y"
       ],
       "description": [
         "Developed air quality UIs for an expedited launch during wildfire season",
@@ -42,6 +42,7 @@
     {
       "position": {
         "title": "UX Engineer",
+        "team": "Design",
         "startDate": "2018, 11",
         "endDate": "2020, 03"
       },
@@ -49,13 +50,15 @@
         "name": "Essential",
         "industry": "Consumer Electronics",
         "location": "Palo Alto, CA",
-        "skip": false,
         "url": "",
         "logo": ""
       },
       "skills": [
         "Vue",
-        "Vuex"
+        "Vuex",
+        "SCSS",
+        "Prototyping",
+        "Sketch"
       ],
       "description": [
         "Prototyped navigation models, on-screen keyboards, customization features, and other system components for project GEM, a candybar shaped mobile device",
@@ -65,6 +68,7 @@
     {
       "position": {
         "title": "Frontend Software Engineer",
+        "team": "Marketing & Sales",
         "startDate": "2018, 03",
         "endDate": "2020, 03"
       },
@@ -77,7 +81,13 @@
         "logo": ""
       },
       "skills": [
-
+        "Zendesk",
+        "Shopify",
+        "MailChimp",
+        "JavaScript",
+        "SCSS",
+        "Sketch",
+        "i18n"
       ],
       "description": [
         "Maintained and updated primary company website with internationalized content, promotional forms, and new pages; deployed to Heroku with a SecureCDN cache to serve thousands of daily active users",
@@ -101,7 +111,8 @@
       },
       "skills": [
         "Backbone.js",
-        "SCSS"
+        "SCSS",
+        "Sketch"
       ],
       "description": [
         "Rewrote most of the app interface using Backbone.js and SCSS",
@@ -123,7 +134,9 @@
         "logo": ""
       },
       "skills": [
-
+        "Vue",
+        "jQuery",
+        "Jekyll"
       ],
       "description": [
         "Created several kiosk interfaces specialized in scent diffusion",
@@ -146,7 +159,9 @@
         "logo": ""
       },
       "skills": [
-
+        "MySQL",
+        "Illustrator",
+        "Bash"
       ],
       "description": [
         "Created and published 27 mobile applications for school districts",
@@ -169,6 +184,7 @@
       },
       "skills": [
         "Backbone.js",
+        "Photoshop",
         "Git"
       ],
       "description": [
@@ -193,7 +209,10 @@
       },
       "skills": [
         "PHP",
-        "MySQL"
+        "MySQL",
+        "Photoshop",
+        "jQuery",
+        "HTML"
       ],
       "description": [
         "Developed website frontend that served over 300 unique daily active users",
