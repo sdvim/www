@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/base.astro
 title: About
+description: I’m a dad, husband, software developer, and friend to most.
 updated: 2022-07-19
 related:
   Now: /now
