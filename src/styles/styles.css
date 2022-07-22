@@ -16,18 +16,18 @@ a {
   color: #d80;
 }
 
-header ul {
+menu {
   display: flex;
   padding: 0;
   margin: 0;
 }
 
-header ul li {
+menu li {
   margin: 0 0 0 1em;
   list-style: none;
 }
 
-header ul li:first-child {
+menu li:first-child {
   margin: 0;
   flex: 1;
 }
