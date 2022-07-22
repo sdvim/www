@@ -5,10 +5,8 @@ description: This is a uses page, a breakdown of my everyday tools.
 updated: 2022-07-18
 related:
   About: /about
+  uses.tech: //uses.tech
 ---
-
-### This is a [uses](//uses.tech/) page, a breakdown of my everyday tools.
-
 **Laptop**: MacBook Pro 2012
 - Memory: 16 GB
 - Storage: 2× 120 GB SDD in RAID 0

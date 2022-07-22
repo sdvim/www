@@ -29,7 +29,10 @@ const metaDescription = description ?? fallbackDescription;
     </header>
 
     <main>
-      { title && <h1>{ title }</h1>}
+      <header>
+        { title && <h1>{ title }</h1>}
+        { description && <p>{ description }</p>}
+      </header>
       <slot />
 
       { related && <>

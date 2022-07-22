@@ -7,8 +7,6 @@ related:
   Now: /now
   Resume: /resume
 ---
-### I’m a dad, husband, software developer, and friend to most.
-
 I've spent much of my life on a computer, despite not growing up in a technical environment. I am the son of two immigrants from Argentina, raised in tropical Miami, Florida.
 
 As technology became more pervasive in everyday life, so did my interest in its inner workings. I grew fascinated by the limitless information both available and targeted to everyone, and how to better make sense of it all.
