@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/base.astro';
+import DateFormatted from '../components/DateFormatted.astro';
 const title = "Blog";
 const description = "Some recent reflections, covering most aspects of my life.";
 const entries = await Astro.glob('./blog/*.md');
@@ -14,11 +15,7 @@ const filteredEntries = entries.filter((entry) => entry.frontmatter.published).s
       <span>{description}</span>
       <br>
       <a href={url}>
-        <date>{ new Date(new Date(date).getTime() + 1E8).toLocaleDateString("en-us", {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        }) }</date>
+        <DateFormatted dateString={date} />
       </a>
     </p>
   )}
