@@ -38,6 +38,8 @@ related:
 - Journal calendar button: `logseq-journals-calendar`
 - Focus view: `logseq-focus-mode`
 
+![Photo of carefully posed on the go items](/img/photo-on-the-go-stuff.jpg "Photo of carefully posed on the go items")
+
 **On the go**
 - Mobile device: iPhone 13 Mini
 - Sling bag: [The North Face bozer fanny pack](//www.asos.com/us/the-north-face/the-north-face-bozer-fanny-pack-in-yellow/prd/21674067)
