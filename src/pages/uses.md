@@ -7,6 +7,9 @@ related:
   About: /about
   uses.tech: //uses.tech
 ---
+
+![Screenshot of VS Code and iTerm2](/img/screenshot-vscode-terminal.png "Screenshot of VS Code and iTerm2")
+
 **Laptop**: MacBook Pro 2012
 - Memory: 16 GB
 - Storage: 2× 120 GB SDD in RAID 0
