@@ -49,7 +49,7 @@ const metaDescription = description ?? fallbackDescription;
     <footer>
       <small>
         <span>Last updated:</span>
-        <date>{ new Date(updated).toLocaleDateString('en-us', {
+        <date>{ new Date(new Date(updated).getTime() + 1E8).toLocaleDateString('en-us', {
           year: "numeric",
           month: "long",
           day: "numeric",

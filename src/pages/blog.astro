@@ -14,7 +14,7 @@ const filteredEntries = entries.filter((entry) => entry.frontmatter.published).s
       <span>{description}</span>
       <br>
       <a href={url}>
-        <date>{ new Date(date).toLocaleDateString('en-us', {
+        <date>{ new Date(new Date(date).getTime() + 1E8).toLocaleDateString("en-us", {
           year: "numeric",
           month: "long",
           day: "numeric",
