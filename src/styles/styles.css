@@ -45,6 +45,24 @@ blockquote {
   font-size: 0.85em;
 }
 
+table {
+  font-size: 0.85em;
+}
+
+tbody tr:nth-child(odd) {
+  opacity: .666;
+}
+
+th {
+  border-bottom: 1px dashed;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.5em;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     background: #000;
