@@ -2,7 +2,7 @@
 layout: ../layouts/base.astro
 title: Uses
 description: This is a uses page, a breakdown of my everyday tools.
-updated: 2022-07-18
+updated: 2022-07-30
 related:
   About: /about
   uses.tech: //uses.tech
@@ -11,9 +11,19 @@ related:
 ![Screenshot of VS Code and iTerm2](/img/screenshot-vscode-terminal.png "Screenshot of VS Code and iTerm2")
 
 **Laptop**: MacBook Pro 2012
+- CPU: 2.5 GHz Dual-Core Intel i5
+- GPU: Intel HD 4000 1536 MB
 - Memory: 16 GB
 - Storage: 2× 120 GB SDD in RAID 0
 - macOS: Catalina 10.15.7 via [dosdude1's patcher](http://dosdude1.com/catalina/)
+
+**Desktop:** Hackintosh
+- CPU: 4.2 Ghz Quad-Core Intel i7
+- GPU: AMD Radeon RX 580 8 GB
+- Memory: 32 GB
+- Storage 500 GB NVMe SSD
+- macOS: Monterey 12.5 via [OpenCore](//dortania.github.io/OpenCore-Install-Guide/)
+- More details on [PCPartPicker](//pcpartpicker.com/b/Qfb8TW)
 
 **Terminal**: iTerm2
 - Font: [JetBrains Mono](//www.jetbrains.com/lp/mono/)
