@@ -1,17 +1,20 @@
 ---
 layout: ../layouts/base.astro
 title: About
-description: I’m a dad, husband, software developer, and friend to most.
-updated: 2022-07-19
+description: I’m a father, husband, software developer, and chatty nerd.
+updated: 2022-08-17
 related:
   Now: /now
   Resume: /resume
 ---
-I've spent much of my life on a computer, despite not growing up in a technical environment. I am the son of two immigrants from Argentina, raised in tropical Miami, Florida.
+
+![Side by side comparison of me on a computer taken 10 years apart](/img/10-years.jpg "Side by side comparison of me on a computer taken 10 years apart")
+
+Despite being born in tropical Miami, Florida to two Argentinean immigrants, I've spent much of my life with computers. It's been an eventful journey that I'd like to share.
 
 As technology became more pervasive in everyday life, so did my interest in its inner workings. I grew fascinated by the limitless information both available and targeted to everyone, and how to better make sense of it all.
 
-I love talking about tech; in learning from others as well as helping the less savvy. Wanna chat? Feel free to [contact](/contact) me.
+I love talking about tech: in learning from others as well as sharing my findings, in its wonders and dangers, and in its creation and ideation. Wanna chat? [Contact](/contact) me.
 
 ### Colophon
 
