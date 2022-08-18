@@ -4,7 +4,7 @@ published: true
 title: Y'all Boys Talked
 location: Caltrain to San Francisco, CA
 date: 2020-01-09
-description: "Last year, three of my closest friends and I started a podcast."
+description: "Last year three of my closest friends and I started a podcast."
 coverImage: ./images/yall-boys-talkin.jpg
 coverImageCaption: "Cover photo was from the night of the reunion. It was the only podcast we recorded together in person, all others were over Google Hangouts."
 ---
