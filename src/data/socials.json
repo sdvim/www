@@ -1,7 +1,7 @@
 [
   {
     "title": "Are.na",
-    "url": "//are.na/sdvim",
+    "url": "//are.na/sdv",
     "description": "Curated findings from the weird wide web; especially personal homepages"
   },
   {
@@ -21,7 +21,12 @@
   },
   {
     "title": "Twitter",
-    "url": "//twitter.com/sdvim",
-    "description": "Sparse thoughts and occasional retweets"
+    "url": "//twitter.com/sdv_eth",
+    "description": "Niche micro internet celebrity in the NFT space"
+  },
+  {
+    "title": "Farcaster",
+    "url": "//fcast.me/sdv",
+    "description": "Twitter alternative with a crypto centric audience"
   }
 ]
