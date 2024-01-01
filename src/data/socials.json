@@ -5,28 +5,8 @@
     "description": "Curated findings from the weird wide web; especially personal homepages"
   },
   {
-    "title": "GitHub",
-    "url": "//github.com/sdvim",
-    "description": "Repositories of code I've shared, i.e. this website and my dotfiles"
-  },
-  {
-    "title": "Last.fm",
-    "url": "//www.last.fm/user/sdvim",
-    "description": "Statistics of every song I've listened to since 2009"
-  },
-  {
-    "title": "LinkedIn",
-    "url": "//www.linkedin.com/in/sdvim/",
-    "description": "Bulleted lists of my all full-time jobs"
-  },
-  {
-    "title": "Twitter",
-    "url": "//twitter.com/sdv_eth",
-    "description": "Niche micro internet celebrity in the NFT space"
-  },
-  {
     "title": "Farcaster",
-    "url": "//fcast.me/sdv",
-    "description": "Twitter alternative with a crypto centric audience"
+    "url": "//warpcast.com/sdv.eth",
+    "description": "The future of decentralized social networks"
   }
 ]
