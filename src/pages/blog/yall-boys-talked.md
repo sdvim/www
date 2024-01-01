@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/base.astro
-published: true
+published: false
 title: Y'all Boys Talked
 location: Caltrain to San Francisco, CA
 date: 2020-01-09

@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/base.astro
-published: true
+published: false
 title: Better late than never
 date: 2020-01-02
 location: LAS Airport in Paradise, NV

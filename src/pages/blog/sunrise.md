@@ -4,7 +4,7 @@ title: Sunrise
 date: 2022-08-20
 location: "My Dining Table in Draper, UT"
 description: "Finding appreciation for a rare yet daily moment."
-published: true
+published: false
 ---
 
 ![Sunrise along the Wasatch Front](/img/sunrise.jpg "Sunrise along the Wasatch Front")

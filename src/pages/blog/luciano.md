@@ -4,7 +4,7 @@ title: Luciano
 date: 2022-08-17
 location: "In bed, next to him and Celeste sleeping."
 description: "Last week my life changed forever."
-published: true
+published: false
 ---  
 
 I've been expecting to be a father since [last December](/blog/2021#2022), but it didn't truly hit me until I saw his head crowning. What should have been hours of grueling work for Celeste wound up being the smoothest five minutes imaginable for a delivery. With nothing more than a couple of focused sighs, she pushed until Luciano entered the world, and soon after into her arms. I was in awe, disbelief, excitement, tears, and pure happiness. As cliche as it is to say, my life really did change the moment I saw him in his entirety.  

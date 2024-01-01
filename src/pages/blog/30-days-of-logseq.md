@@ -4,7 +4,7 @@ title: 30 days of Logseq
 date: 2022-07-22
 location: "My living room in Draper, UT"
 description: It's been years since I've been so excited about software.
-published: true
+published: false
 related:
   Logseq: //logseq.com
 ---

@@ -4,7 +4,7 @@ title: "Saying less"
 date: 2022-07-17
 location: My Kitchen in Draper, UT
 description: "Speaking concisely is hard."
-published: true
+published: false
 ---
 
 I tend to have a difficult time talking about things that excite me in a straightforward and concise manner. My thoughts outspeed my words and by the time I finish a sentence, I have two more tangental points queued up. This can turn a simple response to a question into a speech or lecture.  
