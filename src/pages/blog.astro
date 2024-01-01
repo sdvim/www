@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/base.astro';
-import DateFormatted from '../components/DateFormatted.astro';
 const title = "Blog";
 const description = "Some recent reflections, covering most aspects of my life.";
 const entries = await Astro.glob('./blog/*.md');
@@ -9,13 +8,10 @@ const filteredEntries = entries.filter((entry) => entry.frontmatter.published).s
 ---
 
 <BaseLayout content={{ title, description }}>
-  {filteredEntries.map(({ url, frontmatter: { title, description, date } }) => 
+  {filteredEntries.map(({ url, frontmatter: { title } }) => 
     <p>
-      <strong>{title}</strong> -
-      <span>{description}</span>
-      <br>
       <a href={url}>
-        <DateFormatted dateString={date} />
+        {title}
       </a>
     </p>
   )}
