@@ -1,14 +1,12 @@
 ---
 layout: ../layouts/base.astro
 title: About
-description: I’m a father, husband, software developer, and chatty nerd.
-updated: 2022-08-17
+description: I’m a father, husband, software developer.
+updated: 2023-12-31
 related:
   Now: /now
   Resume: /resume
 ---
-
-![Side by side comparison of me on a computer taken 10 years apart](/img/10-years.jpg "Side by side comparison of me on a computer taken 10 years apart")
 
 Despite being born in tropical Miami, Florida to two Argentinean immigrants, I've spent much of my life with computers. It's been an eventful journey that I'd like to share.
 
