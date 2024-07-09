@@ -17,7 +17,7 @@
         "title": "Software Engineer",
         "team": "Assistant Smart Display",
         "startDate": "2020, 6",
-        "endDate": "2021, 10"        
+        "endDate": "2021, 10"
       },
       "company": {
         "name": "Google",
@@ -26,17 +26,13 @@
         "url": "",
         "logo": ""
       },
-      "skills": [
-        "Dart",
-        "Flutter",
-        "a11y"
-      ],
+      "skills": ["Dart", "Flutter", "a11y"],
       "description": [
         "Developed air quality UIs for an expedited launch during wildfire season",
         "Implemented user enrollment flow for upcoming feature",
         "Improved voice plate with new animation and smoother transitions ",
         "Started backend data integration for user-wide accessibility settings for devices",
-        "Learned and frequently used internal tools: Rapid, Fusion, and Scuba"        
+        "Learned and frequently used internal tools: Rapid, Fusion, and Scuba"
       ]
     },
     {
@@ -53,16 +49,10 @@
         "url": "",
         "logo": ""
       },
-      "skills": [
-        "Vue",
-        "Vuex",
-        "SCSS",
-        "Prototyping",
-        "Sketch"
-      ],
+      "skills": ["Vue", "Vuex", "SCSS", "Prototyping", "Sketch"],
       "description": [
         "Prototyped navigation models, on-screen keyboards, customization features, and other system components for project GEM, a candybar shaped mobile device",
-        "Developed various high-fidelity sample applications for GEM"        
+        "Developed various high-fidelity sample applications for GEM"
       ]
     },
     {
@@ -105,15 +95,11 @@
       "company": {
         "name": "Megastar",
         "industry": "Social Mobile App",
-        "location": "Oakland, CA",        
+        "location": "Oakland, CA",
         "url": "",
         "logo": ""
       },
-      "skills": [
-        "Backbone.js",
-        "SCSS",
-        "Sketch"
-      ],
+      "skills": ["Backbone.js", "SCSS", "Sketch"],
       "description": [
         "Rewrote most of the app interface using Backbone.js and SCSS",
         "Designed iconography and style guide for app components with Sketch",
@@ -129,15 +115,11 @@
       "company": {
         "name": "Inhalio",
         "industry": "B2B Hardware",
-        "location": "San Jose, CA",        
+        "location": "San Jose, CA",
         "url": "",
         "logo": ""
       },
-      "skills": [
-        "Vue",
-        "jQuery",
-        "Jekyll"
-      ],
+      "skills": ["Vue", "jQuery", "Jekyll"],
       "description": [
         "Created several kiosk interfaces specialized in scent diffusion",
         "Engineered a method of silent over-the-air deployment updates",
@@ -149,20 +131,16 @@
       "position": {
         "title": "Mobile Application Specialist",
         "startDate": "2014, 07",
-        "endDate": "2015, 06"        
+        "endDate": "2015, 06"
       },
       "company": {
         "name": "SchoolMessenger",
         "industry": "EdTech Mobile Apps",
-        "location": "Santa Cruz, CA",        
+        "location": "Santa Cruz, CA",
         "url": "",
         "logo": ""
       },
-      "skills": [
-        "MySQL",
-        "Illustrator",
-        "Bash"
-      ],
+      "skills": ["MySQL", "Illustrator", "Bash"],
       "description": [
         "Created and published 27 mobile applications for school districts",
         "Designed icons, splash screens, and headers for over 130 mobile applications",
@@ -182,11 +160,7 @@
         "url": "",
         "logo": ""
       },
-      "skills": [
-        "Backbone.js",
-        "Photoshop",
-        "Git"
-      ],
+      "skills": ["Backbone.js", "Photoshop", "Git"],
       "description": [
         "Prototyped several screens using Backbone.js in collaboration with product team",
         "Learned to use Git, Less.js, Underscore.js, and Vagrant",
@@ -207,13 +181,7 @@
         "url": "",
         "logo": ""
       },
-      "skills": [
-        "PHP",
-        "MySQL",
-        "Photoshop",
-        "jQuery",
-        "HTML"
-      ],
+      "skills": ["PHP", "MySQL", "Photoshop", "jQuery", "HTML"],
       "description": [
         "Developed website frontend that served over 300 unique daily active users",
         "Created a simple CMS to manage file uploads",
@@ -231,22 +199,10 @@
       "React",
       "Vue / Vuex"
     ],
-    "backend": [
-      "Apache",
-      "Firebase",
-      "GraphQL",
-      "MySQL",
-      "PHP"
-    ]
+    "backend": ["Apache", "Firebase", "GraphQL", "MySQL", "PHP"]
   },
   "tools": {
-    "design": [
-      "Figma",
-      "Illustrator",
-      "Photoshop",
-      "Premiere",
-      "Sketch"
-    ],
+    "design": ["Figma", "Illustrator", "Photoshop", "Premiere", "Sketch"],
     "development": [
       "Git",
       "Heroku",
@@ -267,7 +223,7 @@
         "Focused in Game Design, minored in Computer Science",
         "Developed 5 video games for different platforms as team lead and programmer",
         "Learned and utilized several algorithms and data structures for assignments",
-        "Learned basic usage of C, Java, Maya, Flash, Premiere, Unity, and Construct 2"        
+        "Learned basic usage of C, Java, Maya, Flash, Premiere, Unity, and Construct 2"
       ]
     }
   ]

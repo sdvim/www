@@ -7,6 +7,7 @@ description: "It's taken me six years to write this."
 coverImage: ./images/dirty-windows.jpg
 coverImageCaption: "Cover photo was taken in 2014, the very first photo I took of California."
 ---
+
 I've been wanting to create and maintain a blog since my move to California in the beginning of 2014. I made maybe two posts before getting caught up in what it was exactly that I was trying to say, and how I was saying it.
 
 Did I want to share technical knowledge in my findings as a dev? Reflections on past mistakes and how I've reconciled my failures? Or just things in general that caught my attention?

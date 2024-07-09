@@ -7,6 +7,7 @@ published: false
 related:
   Logseq: //logseq.com
 ---
+
 While I can't recall how I stumbled onto Logseq, I absolutely can say it came into my life at the perfect time. I have been trying to [write](/blog/saying-less) [more](/blog/recently#writing), build healthier routines, and give better structure to all the information I intake on a daily basis. Logseq has made much of this almost effortless.
 
 ### Simple yet flexible
@@ -37,14 +38,14 @@ Thoughts proliferate as the foundational ideas begin to settle. When asked about
 
 Screen time:
 
-|Week #|Desktop|Mobile|
-|--|--|--|
-|25|14h 15m|12m|
-|26|12h 50m|1h 43m|
-|27|18h 46m|19m|
-|28|29h 46m|7m|
-|29|24h 57m|39m|
-|**Total**|**100h 34m**|**3h**|
+| Week #    | Desktop      | Mobile |
+| --------- | ------------ | ------ |
+| 25        | 14h 15m      | 12m    |
+| 26        | 12h 50m      | 1h 43m |
+| 27        | 18h 46m      | 19m    |
+| 28        | 29h 46m      | 7m     |
+| 29        | 24h 57m      | 39m    |
+| **Total** | **100h 34m** | **3h** |
 
 Journals: 34 entries, 8594 words
 
@@ -53,6 +54,7 @@ Pages: 116 entries, 7080 words
 Tasks: 85 to do, 103 done
 
 #### Methodology
+
 - Screen time: macOS / iOS
 - Entry count: `ls pages | wc -l`
 - Word count: `wc -w pages/*.md`

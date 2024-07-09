@@ -7,6 +7,7 @@ published: false
 ---
 
 ### Work
+
 This new year started with a sense of guilt. Prior to the holiday break, I felt like I hadn't been able to give my all to the new startup I had just joined. I was burnt out, and I was finally able to admit it to myself and my teammates. I requested a leave of absence to give myself time to recharge and work at my own pace until I was ready for an eventual return.
 
 After a couple of weeks, I was unsettled by the idea of being unproductive and, more importantly, unprofitable. I found freelance work through the crypto and NFT communities I had immersed myself in and kept busy. It was a relief having predictable income in a time where I was occasionally buying and selling for profit, though was by no means sustainable.
@@ -32,6 +33,7 @@ I even managed to achieve a long term goal of mine— gain a healthy amount of w
 ### Travel
 
 With baby on the horizon, Celeste and I have prioritized travel within reasonable amounts. We've gone to
+
 - Vernal, UT (for a covid treatment)
 - Irvine, CA (for a wedding)
 - Las Vegas, NV (for the pools)
@@ -42,7 +44,7 @@ This will probably conclude our travel adventures for the foreseeable future. Th
 
 ### Family
 
-He's real. *Very* real. His first ultrasound he was a mere blob. By the third he was a little bean, and maybe by the sixth he was indeed a tiny person! Today he's gotten so big his profile doesn't fit in the ultrasound view, so we see portions of him at a time. I can feel his kicks and barrel rolls. I can *see* his kicks. I am in total awe of this baby boy that we'll soon be able to hold in our arms and lovingly have to clean his poopies.
+He's real. _Very_ real. His first ultrasound he was a mere blob. By the third he was a little bean, and maybe by the sixth he was indeed a tiny person! Today he's gotten so big his profile doesn't fit in the ultrasound view, so we see portions of him at a time. I can feel his kicks and barrel rolls. I can _see_ his kicks. I am in total awe of this baby boy that we'll soon be able to hold in our arms and lovingly have to clean his poopies.
 
 Consequently my relationship with my parents has been improving. In some aspects I've grown increasingly distant from them, but the passing of Matthew and their new roles as soon to be grandparents has brought us closer. I've been excited to show them all the little things we've gotten for him and all the prep we're doing for his nursery. I can really feel the excitement in both of them and that rubs onto me as both their son and soon to be father of their grandchild.
 
@@ -56,7 +58,8 @@ As her husband I've grown more admiration for her as a person in still being abl
 
 One of my goals for the year to which I have done a lackluster attempt at. I bought a terracotta colored bullet journal that I took along my travels, but could never bring myself to jot down even the simplest of notes. The maintenance and linear structure was always off-putting to me as I had to really think about what was worth writing. This was debilitating as a sporadic person with perfectionist tendencies.
 
-This hurdle changed overnight when I discovered [logseq](https://logseq.com). Years of dabbling in note-taking, todo list, and/or writing methods led me to this holy grail. It was everything I ever wanted *and more*.
+This hurdle changed overnight when I discovered [logseq](https://logseq.com). Years of dabbling in note-taking, todo list, and/or writing methods led me to this holy grail. It was everything I ever wanted _and more_.
+
 - Fully open-source and extensible with an active community
 - File-based storage using `Markdown` (or `.org`) files so data is owned by the user and resilient to any sort of vendor lock-in
 - Straightforward writing experience that emphasizes structure over formatting, which reduces information capture friction and allows for tidying up afterward

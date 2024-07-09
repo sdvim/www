@@ -9,6 +9,7 @@ setup: |
 ---
 
 {socials.map(({ url, title, description }) => (
+
   <p>
     <a href={url}>{title}</a>: {description}
   </p>

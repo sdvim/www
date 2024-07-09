@@ -6,6 +6,7 @@ related:
   nownownow.com: //nownownow.com/about
 updated: 2023-12-31
 ---
+
 - Working full-time at Google as a UX engineer
 - Living in Draper, Utah with my wife, son, and two cats
 - Consolidating all my notes, bookmarks, and interesting finds into [Obsidian](//obsidian.md)

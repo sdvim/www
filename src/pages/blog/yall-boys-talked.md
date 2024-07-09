@@ -7,6 +7,7 @@ description: "Last year three of my closest friends and I started a podcast."
 coverImage: ./images/yall-boys-talkin.jpg
 coverImageCaption: "Cover photo was from the night of the reunion. It was the only podcast we recorded together in person, all others were over Google Hangouts."
 ---
+
 In lieu of self-imposed New Year's resolutions, the four of us [created goals](//ybtfm.netlify.app/challenges) for each and one another. These goals were based on our personal aspirations, long lost hobbies we once dabbled in, or habits that were probably good for us. The challenge was to complete these goals in six months, right before our 10 year high school reunion.
 
 ### What happened?
