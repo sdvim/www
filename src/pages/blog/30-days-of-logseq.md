@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/base.astro
 title: 30 days of Logseq
 date: 2022-07-22
 location: "My living room in Draper, UT"

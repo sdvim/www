@@ -1,5 +1,4 @@
 ---
-layout: ../layouts/base.astro
 title: Now
 description: This is a now page, a summary of my current focuses.
 related:

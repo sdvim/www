@@ -1,5 +1,4 @@
 ---
-layout: ../layouts/base.astro
 title: Contact
 description: You can find me in several places in the internet, often as @sdvim.
 updated: 2022-12-31

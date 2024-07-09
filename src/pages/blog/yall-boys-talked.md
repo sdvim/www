@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/base.astro
 published: false
 title: Y'all Boys Talked
 location: Caltrain to San Francisco, CA

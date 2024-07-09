@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/base.astro
 title: Sunrise
 date: 2022-08-20
 location: "My Dining Table in Draper, UT"

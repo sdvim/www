@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/base.astro';
+import MainLayout from '../layouts/MainLayout.astro';
 import { experiences, educations } from '../data/resume.json';
 const title = 'Resume';
 const updated = '2022-06-21';
@@ -20,7 +20,7 @@ const dateRange = (start, end) => {
 }
 ---
 
-<BaseLayout content={{title, updated, related}}>
+<MainLayout content={{title, updated, related}}>
   <h2>Experience</h2>
   {experiences.map(({position, company, description}) => (
     <article style="border-bottom: 1px dotted">
@@ -66,4 +66,4 @@ const dateRange = (start, end) => {
       </ul>
     </article>
   ))}
-</BaseLayout>
+</MainLayout>

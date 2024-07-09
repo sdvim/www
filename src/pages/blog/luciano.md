@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/base.astro
 title: Luciano
 date: 2022-08-17
 location: "In bed, next to him and Celeste sleeping."

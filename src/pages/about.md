@@ -1,5 +1,4 @@
 ---
-layout: ../layouts/base.astro
 title: About
 description: I’m a father, husband, software developer.
 updated: 2023-12-31

@@ -1,5 +1,4 @@
 ---
-layout: ../layouts/base.astro
 title: Uses
 description: This is a uses page, a breakdown of my everyday tools.
 updated: 2022-12-31

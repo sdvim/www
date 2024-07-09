@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/base.astro
 title: 1 month of parenting
 date: 2022-09-10
 location: "My office room in Draper, UT"

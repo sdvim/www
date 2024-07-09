@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/base.astro
 title: "Recently"
 date: 2022-07-06
 location: The People's Coffee in Salt Lake City, UT

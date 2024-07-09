@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/base.astro
 published: false
 title: Better late than never
 date: 2020-01-02

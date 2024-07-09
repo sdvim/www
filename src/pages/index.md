@@ -1,6 +1,5 @@
 ---
 title: Home
-layout: '../layouts/base.astro'
 ---
 ### Hey, I'm Steve.
 
