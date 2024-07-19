@@ -1,7 +1,7 @@
 ---
 title: About
 description: I’m a father, husband, software developer.
-updated: 2023-12-31
+updated: 2024-07-19
 related:
   Now: /now
   Resume: /resume
@@ -10,8 +10,6 @@ related:
 Despite being born in tropical Miami, Florida to two Argentinean immigrants, I've spent much of my life with computers. It's been an eventful journey that I'd like to share.
 
 As technology became more pervasive in everyday life, so did my interest in its inner workings. I grew fascinated by the limitless information both available and targeted to everyone, and how to better make sense of it all.
-
-I love talking about tech: in learning from others as well as sharing my findings, in its wonders and dangers, and in its creation and ideation. Wanna chat? [Contact](/contact) me.
 
 ### Colophon
 
