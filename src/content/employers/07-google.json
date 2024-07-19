@@ -1,0 +1,29 @@
+{
+  "name": "Google",
+  "industry": "Technology",
+  "location": "Remote",
+  "url": "",
+  "logo": "",
+  "roles": [
+    {
+      "title": "UX Engineer",
+      "team": "AR, Synthetic Humans",
+      "startDate": "2022-10",
+      "skills": ["Vue", "Vuex", "Angular"]
+    },
+    {
+      "title": "Software Engineer",
+      "team": "Assistant, Smart Display",
+      "startDate": "2020-6",
+      "endDate": "2021-10",
+      "skills": ["Dart", "Flutter", "a11y"],
+      "highlights": [
+        "Developed air quality UIs for an expedited launch during wildfire season",
+        "Implemented user enrollment flow for upcoming feature",
+        "Improved voice plate with new animation and smoother transitions ",
+        "Started backend data integration for user-wide accessibility settings for devices",
+        "Learned and frequently used internal tools: Rapid, Fusion, and Scuba"
+      ]
+    }
+  ]
+}

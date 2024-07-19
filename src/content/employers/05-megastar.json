@@ -1,0 +1,20 @@
+{
+  "name": "Megastar",
+  "industry": "Social Mobile App",
+  "location": "Oakland, CA",
+  "url": "",
+  "logo": "",
+  "roles": [
+    {
+      "title": "Frontend Engineer",
+      "startDate": "2016-07",
+      "endDate": "2018-03",
+      "skills": ["Backbone.js", "SCSS", "Sketch"],
+      "highlights": [
+        "Rewrote most of the app interface using Backbone.js and SCSS",
+        "Designed iconography and style guide for app components with Sketch",
+        "Benchmarked UI performance and made optimizations using Chrome Dev Tools, reducing janky animations and expensive repaints by more than 30%"
+      ]
+    }
+  ]
+}

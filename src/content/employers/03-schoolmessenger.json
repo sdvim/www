@@ -1,0 +1,20 @@
+{
+  "name": "SchoolMessenger",
+  "industry": "EdTech Mobile Apps",
+  "location": "Santa Cruz, CA",
+  "url": "",
+  "logo": "",
+  "roles": [
+    {
+      "title": "Mobile Application Specialist",
+      "startDate": "2014-07",
+      "endDate": "2015-06",
+      "skills": ["MySQL", "Illustrator", "Bash"],
+      "highlights": [
+        "Created and published 27 mobile applications for school districts",
+        "Designed icons, splash screens, and headers for over 130 mobile applications",
+        "Wrote several command-line tools to automate mechanical tasks"
+      ]
+    }
+  ]
+}

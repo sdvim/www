@@ -1,0 +1,21 @@
+{
+  "name": "Inhalio",
+  "industry": "B2B Hardware",
+  "location": "San Jose, CA",
+  "url": "",
+  "logo": "",
+  "roles": [
+    {
+      "title": "Web Developer",
+      "startDate": "2015-06",
+      "endDate": "2016-07",
+      "skills": ["Vue", "jQuery", "Jekyll"],
+      "highlights": [
+        "Created several kiosk interfaces specialized in scent diffusion",
+        "Engineered a method of silent over-the-air deployment updates",
+        "Built and maintained primary company website using Jekyll",
+        "Developed a kiosk used in New York Fashion Week for taking selfies and seeing calendar of events in realtime, used by several hundred attendees"
+      ]
+    }
+  ]
+}

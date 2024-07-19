@@ -1,22 +1,18 @@
 ---
+// years.map((x) => <p>{JSON.stringify(x)}</p>)
 import MainLayout from "../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
 const title = "Blog";
 const description =
   "Some recent reflections, covering most aspects of my life.";
-const entries = await Astro.glob("./blog/*.md");
-const sortByDate = (a, b) =>
-  new Date(b.frontmatter.date).valueOf() -
-  new Date(a.frontmatter.date).valueOf();
-const filteredEntries = entries
-  .filter((entry) => entry.frontmatter.published)
-  .sort(sortByDate);
+const entries = await getCollection("years");
 ---
 
 <MainLayout content={{ title, description }}>
   {
-    filteredEntries.map(({ url, frontmatter: { title } }) => (
+    entries.reverse().map((entry) => (
       <p>
-        <a href={url}>{title}</a>
+        <a href={`/${entry.slug}`}>{entry.data.title}</a>
       </p>
     ))
   }

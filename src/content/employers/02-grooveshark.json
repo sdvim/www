@@ -1,0 +1,20 @@
+{
+  "name": "Grooveshark",
+  "industry": "Music Streaming App",
+  "location": "Gainesville, FL",
+  "url": "",
+  "logo": "",
+  "roles": [
+    {
+      "title": "Web Developer Intern",
+      "startDate": "2013-06",
+      "endDate": "2013-08",
+      "skills": ["Backbone.js", "Photoshop", "Git"],
+      "highlights": [
+        "Prototyped several screens using Backbone.js in collaboration with product team",
+        "Learned to use Git, Less.js, Underscore.js, and Vagrant",
+        "Designed and developed a Tumblr theme for company blog"
+      ]
+    }
+  ]
+}

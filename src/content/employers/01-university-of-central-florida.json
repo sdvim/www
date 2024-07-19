@@ -1,0 +1,22 @@
+{
+  "name": "University of Central Florida",
+  "industry": "Public Institution",
+  "location": "Orlando, FL",
+  "url": "",
+  "logo": "",
+  "roles": [
+    {
+      "title": "Web Coordinator",
+      "team": "Student Government",
+      "startDate": "2010-05",
+      "endDate": "2013-05",
+      "skills": ["PHP", "MySQL", "Photoshop", "jQuery", "HTML"],
+      "highlights": [
+        "Developed website frontend that served over 300 unique daily active users",
+        "Created a simple CMS to manage file uploads",
+        "Optimized load times using asynchronous loading and sprite sheets",
+        "Parsed Facebook events, Twitter statuses, and WordPress posts as sources for more website content"
+      ]
+    }
+  ]
+}

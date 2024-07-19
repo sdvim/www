@@ -1,0 +1,22 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
+const socials = await getCollection("socials");
+const title = "Contact";
+const description =
+  "You can find me in several places in the internet, often as @sdvim";
+const updated = "2022-12-31";
+const related = {
+  About: "/about",
+};
+---
+
+<MainLayout content={{ title, description, updated, related }}>
+  {
+    socials.map(({ data: { url, title, description } }) => (
+      <p>
+        <a href={url}>{title}</a>: {description}
+      </p>
+    ))
+  }
+</MainLayout>

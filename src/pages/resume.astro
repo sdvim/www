@@ -1,76 +1,50 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import { experiences, educations } from "../data/resume.json";
+import { getCollection } from "astro:content";
+const employers = await getCollection('employers');
 const title = "Resume";
-const updated = "2022-06-21";
+const updated = "2024-07-19";
 const related = {
   About: "/about",
   Portfolio: "//hire.stevedv.com",
   LinkedIn: "//www.linkedin.com/in/sdvim",
 };
-const dateRange = (start, end) => {
-  const startDate = new Date(start);
-  const endDate = new Date(end);
-  const sM = startDate.getMonth() + 1;
-  const sY = startDate.getFullYear().toString().substring(2);
-  const eM = endDate.getMonth() + 1;
-  const eY = endDate.getFullYear().toString().substring(2);
-
-  return `${sM}/${sY} — ${eM}/${eY}`;
+const dateRange = (startString: string, endString: string) => {
+  const [startYear, startMonth] = startString.split('-');
+  if (endString) {
+    const [endYear, endMonth] = endString.split('-');
+    return `${startMonth}/${startYear} — ${endMonth}/${endYear}`;
+  } else {
+    return `${startMonth}/${startYear} — present`;
+  }
 };
 ---
 
 <MainLayout content={{ title, updated, related }}>
   <h2>Experience</h2>
   {
-    experiences.map(({ position, company, description }) => (
+    employers.reverse().map((company) => (
       <article style="border-bottom: 1px dotted">
-        {!company.skip && (
-          <h3 style="display: flex; justify-content: space-between;">
-            <strong>{company.name}</strong>
-            <small>
-              {company.industry}
-              &nbsp;&bullet;&nbsp;
-              {company.location}
-            </small>
-          </h3>
-        )}
-        <p style="display: flex; justify-content: space-between;">
-          <span>
-            {position.title}
-            {position.team && `, ${position.team}`}
-          </span>
-          <date>{dateRange(position.startDate, position.endDate)}</date>
-        </p>
-        <ul>
-          {description.map((item) => (
-            <li>{item}</li>
-          ))}
-        </ul>
-      </article>
-    ))
-  }
-
-  <h2>Education</h2>
-  {
-    educations.map(
-      ({ name, degree, location, description, startDate, endDate }) => (
-        <article>
-          <h3 style="display: flex; justify-content: space-between;">
-            <strong>{name}</strong>
-            <small>{location}</small>
-          </h3>
+        <h3 style="display: flex; justify-content: space-between;">
+          <strong>{company.data.name}</strong>
+          <small>
+            {company.data.industry}
+            &nbsp;&bullet;&nbsp;
+            {company.data.location}
+          </small>
+        </h3>
+        {company.data.roles.map((role) => (
           <p style="display: flex; justify-content: space-between;">
-            <span>{degree}</span>
-            <date>{dateRange(startDate, endDate)}</date>
+            <span>
+              {role.team ? `${role.title}, ${role.team}` : role.title}
+            </span>
+            <date>{dateRange(role.startDate, role.endDate)}</date>
           </p>
           <ul>
-            {description.map((item) => (
-              <li>{item}</li>
-            ))}
+            {role.highlights?.map((highlight: string) => (<li>{highlight}</li>))}
           </ul>
-        </article>
-      ),
-    )
+        ))}
+      </article>
+    ))
   }
 </MainLayout>

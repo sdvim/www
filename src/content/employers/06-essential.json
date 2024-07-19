@@ -1,0 +1,41 @@
+{
+  "name": "Essential",
+  "industry": "Consumer Electronics",
+  "location": "Palo Alto, CA",
+  "url": "",
+  "logo": "",
+  "roles": [
+    {
+      "title": "UX Engineer",
+      "team": "Design",
+      "startDate": "2018-11",
+      "endDate": "2020-03",
+      "skills": ["Vue", "Vuex", "SCSS", "Prototyping", "Sketch"],
+      "highlights": [
+        "Prototyped navigation models, on-screen keyboards, customization features, and other system components for project GEM, a candybar shaped mobile device",
+        "Developed various high-fidelity sample applications for GEM"
+      ]
+    },
+    {
+      "title": "Frontend Software Engineer",
+      "team": "Marketing & Sales",
+      "startDate": "2018-03",
+      "endDate": "2020-03",
+      "skills": [
+        "Zendesk",
+        "Shopify",
+        "MailChimp",
+        "JavaScript",
+        "SCSS",
+        "Sketch",
+        "i18n"
+      ],
+      "highlights": [
+        "Maintained and updated primary company website with internationalized content, promotional forms, and new pages; deployed to Heroku with a SecureCDN cache to serve thousands of daily active users",
+        "Engineered custom features like bundled add-ons for Shopify online store",
+        "Coded and helped design theme for Zendesk support website",
+        "Supported marketing team by coding several Mailchimp email templates"
+      ]
+    }
+  ]
+}
