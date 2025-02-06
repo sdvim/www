@@ -1,9 +1,7 @@
 ---
 import "../styles/styles.css";
-import DateFormatted from "../components/DateFormatted.astro";
-const {
-  content: { title, updated, related, description },
-} = Astro.props;
+const { content: { title, description } } = Astro.props;
+const isHomePage = Astro.url.pathname === '/'
 const fallbackDescription =
   "A personal website, blog, and open knowledge base.";
 const metaDescription = description ?? fallbackDescription;
@@ -32,47 +30,8 @@ const metaDescription = description ?? fallbackDescription;
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <header>
-      <menu>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </menu>
-    </header>
-
-    <main>
-      <header>
-        {title && <h1>{title}</h1>}
-        {description && <p>{description}</p>}
-      </header>
-      <slot />
-
-      {
-        related && (
-          <>
-            <h3>Related</h3>
-            <ul>
-              {Object.entries(related).map(([title, url]) => (
-                <li>
-                  <a href={`${url}`}>{title}</a>
-                </li>
-              ))}
-            </ul>
-          </>
-        )
-      }
-    </main>
-
-    {
-      updated && (
-        <footer>
-          <small>
-            <span>Last updated:</span>
-            <DateFormatted dateString={updated} />
-          </small>
-        </footer>
-      )
-    }
+    {title && <h1>{title}</h1>}
+    <slot />
+    {!isHomePage && <div><a href="/">&larr;</a></div>}
   </body>
 </html>
