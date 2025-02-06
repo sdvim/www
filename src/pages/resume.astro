@@ -32,7 +32,7 @@ const dateRange = (startString: string, endString: string) => {
             {company.data.location}
           </small>
         </h3>
-        {company.data.roles.map((role) => (
+        {company.data.roles.map((role: any) => (
           <p style="display: flex; justify-content: space-between;">
             <span>
               {role.team ? `${role.title}, ${role.team}` : role.title}
