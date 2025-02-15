@@ -10,6 +10,7 @@ title: Steve Della Valentina
 
 ## Recently:
 - [isdarkmodeon](//isdarkmodeon.netlify.app) - dark mode checker with 190 bytes of CSS
+- [sdv.wtf](//sdv.wtf) - art experiments on a self-printing CSS page
 - [dolphin.cool](//dolphin.cool) - dolphin speak translator ([src](//github.com/dolphin-zone/website))
 - [sophiawilson.nyc](//sophiawilson.nyc) - photographer portfolio ([src](//github.com/sdvim/sophia-wilson-nyc))
 - [creature.market](//creetyoor-wurld.myshopify.com/password) (pw: thermal) - creature world shopify site, archived ([src](//github.com/sdvim/creature.market))
