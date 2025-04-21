@@ -46,8 +46,13 @@ h3 {
 }
 
 ul {
-  margin: 0;
   padding: 0 0 0 1.25em;
+}
+
+ul,
+p {
+  opacity: .66;
+  margin: 0;
 }
 
 a {
