@@ -5,10 +5,8 @@ title: Steve Della Valentina
 ## Currently:
 - Parenting a toddler with the help of my wife and two cats
 - Living near Salt Lake City, Utah
-- Working at Google as a UX engineer
-- Learning very basic Japanese on Duolingo
-- Switching to Colemak-DH (Miryoku) on a Corne keyboard
-- Thinking about notetaking, homepages, self-hosting, CSS golfing, crypto, artificial intelligence, and how people interact with computers
+- Practicing Colemak-DH (Miryoku) on a Corne keyboard
+- Thinking about notetaking, homepages, self-hosting, CSS golfing, collectibles, nonexhaustive lists, and how people interact with and without computers
 
 ## Recently:
 - [isdarkmodeon](//isdarkmodeon.netlify.app) - dark mode checker with 190 bytes of CSS
@@ -23,7 +21,6 @@ title: Steve Della Valentina
 - [Are.na](//are.na/sdv)
 - [GitHub](//github.com/sdvim)
 - [Last.fm](//last.fm/user/sdvim)
-- [Warpcast](//warpcast.com/sdv.eth)
 
 ## Last updated:
-April 20, 2025
+July 2025
