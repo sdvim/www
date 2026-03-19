@@ -4,11 +4,13 @@ title: Steve Della Valentina
 
 ## Currently:
 - Parenting a toddler with the help of my wife and two cats
+- Working as a design engineer at Courtyard
 - Living near Salt Lake City, Utah
-- Practicing Colemak-DH (Miryoku) on a Corne keyboard
+- Tinkering with Nix and dotfiles
 - Thinking about notetaking, homepages, self-hosting, CSS golfing, collectibles, nonexhaustive lists, and how people interact with and without computers
 
 ## Recently:
+- [worktui](//github.com/sdvim/worktui) - terminal dashboard for Linear issues, GitHub PRs, and workspace visibility
 - [isdarkmodeon](//isdarkmodeon.netlify.app) - dark mode checker with 190 bytes of CSS
 - [sdv.wtf](//sdv.wtf) - art experiments on a self-printing CSS page
 - [dolphin.cool](//dolphin.cool) - dolphin speak translator ([src](//github.com/dolphin-zone/website))
@@ -23,4 +25,4 @@ title: Steve Della Valentina
 - [Last.fm](//last.fm/user/sdvim)
 
 ## Last updated:
-July 2025
+March 2026
